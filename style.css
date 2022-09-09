@@ -1,0 +1,49 @@
+.navvy {
+  background-color: #037720;
+  height: 100px;
+}
+
+.navvy li {
+  display: inline;
+  position: relative;
+  top: 40px;
+  padding: 30px;
+}
+
+.navvy a {
+  color: white;
+  font-size: 20px;
+}
+
+.navvy h1 {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  position: relative;
+  bottom: 19px;
+}
+
+.herobar {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.herobar .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (20vh)[1];
+      grid-template-rows: repeat(1, 20vh);
+}
+
+.herobar .grid .sec1 {
+  background-color: #037720;
+}
+
+.herobar .grid .sec2 {
+  background-color: #888888;
+}
+/*# sourceMappingURL=style.css.map */

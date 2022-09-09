@@ -1,0 +1,56 @@
+$backgroundColor: rgb(3, 119, 32);
+$headingSize: 40px;
+$color: rgb(255, 255, 255);
+
+
+.navvy {
+    background-color:$backgroundColor;
+    height: 100px;
+
+
+    li {
+        display: inline;
+        position: relative;
+        top:40px;
+        padding: 30px;
+    }
+
+    a {
+        color:$color;
+        font-size: 20px;
+    }
+
+    h1    {
+         color:$color;
+         text-align: center;
+         font-size: 35px;
+         position: relative;
+         bottom:19px;
+    }    
+
+}
+
+
+.herobar{
+    position: relative;
+    justify-content: center;
+    
+
+     .grid {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows:repeat(1, 20vh);
+
+        .sec1 {
+            background-color:$backgroundColor;
+        }
+        .sec2 {
+            background-color: rgb(136, 136, 136);
+        }
+    }
+
+
+}
+   
+
+
