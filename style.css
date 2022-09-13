@@ -1,5 +1,5 @@
 .navvy {
-  background-color: #037720;
+  background-color: #398632;
   height: 100px;
 }
 
@@ -39,18 +39,27 @@
   display: grid;
   -ms-grid-columns: (auto)[2];
       grid-template-columns: repeat(2, auto);
-  -ms-grid-rows: (20vh)[1];
-      grid-template-rows: repeat(1, 20vh);
+  -ms-grid-rows: (20vh)[3];
+      grid-template-rows: repeat(3, 20vh);
   border-radius: 20px;
   overflow: hidden;
 }
 
 .herobar .grid .sec1 {
-  background-color: #037720;
+  background-color: #398632;
+  grid-row: span 3;
+}
+
+.herobar .grid .sec1 h1 {
+  color: white;
+  position: relative;
+  left: 30px;
+  top: 20px;
 }
 
 .herobar .grid .sec2 {
-  background-image: url(images/psychology-web-design-00-lead.jpeg);
+  background-image: url(images/four-leaf-clovers-jpg.jpeg);
   background-position: center;
+  grid-row: span 3;
 }
 /*# sourceMappingURL=style.css.map */
