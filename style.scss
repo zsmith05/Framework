@@ -2,10 +2,17 @@ $backgroundColor: rgb(57, 134, 50);
 $headingSize: 40px;
 $color: rgb(255, 255, 255);
 
+body{
+    margin: 0px;
+}
+
 
 .navvy {
     background-color:$backgroundColor;
-    height: 100px;
+
+    ul {
+        margin: 0px;
+    }
 
 
     li {
@@ -26,7 +33,9 @@ $color: rgb(255, 255, 255);
          font-size: 35px;
          position: relative;
          bottom:19px;
-    }    
+    } 
+    
+   
 
 }
 

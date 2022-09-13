@@ -1,6 +1,13 @@
+body {
+  margin: 0px;
+}
+
 .navvy {
   background-color: #398632;
-  height: 100px;
+}
+
+.navvy ul {
+  margin: 0px;
 }
 
 .navvy li {
