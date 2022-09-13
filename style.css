@@ -28,6 +28,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  top: 50px;
+  left: 270px;
+  width: 70%;
+  height: 200px;
 }
 
 .herobar .grid {
@@ -37,6 +41,8 @@
       grid-template-columns: repeat(2, auto);
   -ms-grid-rows: (20vh)[1];
       grid-template-rows: repeat(1, 20vh);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .herobar .grid .sec1 {
@@ -44,6 +50,7 @@
 }
 
 .herobar .grid .sec2 {
-  background-color: #888888;
+  background-image: url(images/psychology-web-design-00-lead.jpeg);
+  background-position: center;
 }
 /*# sourceMappingURL=style.css.map */

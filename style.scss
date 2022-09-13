@@ -34,18 +34,25 @@ $color: rgb(255, 255, 255);
 .herobar{
     position: relative;
     justify-content: center;
+    top:50px;
+    left:270px;
+    width: 70%;
+    height: 200px;
     
 
      .grid {
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows:repeat(1, 20vh);
+        border-radius: 20px;
+        overflow: hidden;
 
         .sec1 {
             background-color:$backgroundColor;
         }
         .sec2 {
-            background-color: rgb(136, 136, 136);
+            background-image:url(images/psychology-web-design-00-lead.jpeg) ;
+            background-position: center;
         }
     }
 
