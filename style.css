@@ -4,6 +4,9 @@ body {
 
 .navvy {
   background-color: #398632;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
 }
 
 .navvy ul {
@@ -40,7 +43,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 50px;
+  top: 170px;
   left: 270px;
   width: 70%;
   height: 200px;
@@ -78,19 +81,35 @@ body {
 .start {
   width: 100%;
   height: 100vh;
-  background-color: purple;
+  background-color: white;
   margin: 0px;
 }
 
 .comp {
   width: 100%;
   height: 100vh;
-  background-color: #6d8000;
+  background-color: white;
   margin: 0px;
 }
 
 .comp h1 {
   margin: 0px;
-  color: white;
+  color: #398632;
+  position: relative;
+  top: 10px;
+}
+
+.comp #links {
+  position: relative;
+  left: 900px;
+  top: -85px;
+}
+
+.comp #links h1 {
+  color: #398632;
+}
+
+.comp #links li {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
