@@ -39,7 +39,7 @@ body {
   height: 100vh;
 }
 
-.herobar {
+.main-herobar {
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -50,7 +50,7 @@ body {
   height: 200px;
 }
 
-.herobar .grid {
+.main-herobar .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[2];
@@ -61,19 +61,19 @@ body {
   overflow: hidden;
 }
 
-.herobar .grid .sec1 {
+.main-herobar .grid .main-sec1 {
   background-color: #398632;
   grid-row: span 3;
 }
 
-.herobar .grid .sec1 h1 {
+.main-herobar .grid .main-sec1 h1 {
   color: white;
   position: relative;
   left: 30px;
   top: 20px;
 }
 
-.herobar .grid .sec2 {
+.main-herobar .grid .main-sec2 {
   background-image: url(images/four-leaf-clovers-jpg.jpeg);
   background-position: center;
   grid-row: span 3;
@@ -128,12 +128,70 @@ body {
 .heropage {
   width: 100%;
   height: 100vh;
-  background-color: #3255c9;
+  background-color: white;
+}
+
+.heropage h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.heropage #paragraph1 {
+  width: 50%;
+  font-size: 20px;
+}
+
+.heropage h2 {
+  text-align: center;
 }
 
 .navpage {
   width: 100%;
   height: 100vh;
   background-color: #e925cf;
+}
+
+.herobar {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 60px;
+  left: 270px;
+  width: 70%;
+  height: 200px;
+}
+
+.herobar .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (20vh)[3];
+      grid-template-rows: repeat(3, 20vh);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.herobar .grid .sec1 {
+  background-color: #398632;
+  grid-row: span 3;
+}
+
+.herobar .grid .sec1 h1 {
+  color: white;
+  position: relative;
+  left: 30px;
+  top: 20px;
+}
+
+.herobar .grid .sec2 {
+  background-color: gray;
+  background-position: center;
+  grid-row: span 3;
+}
+
+.herobar .grid .sec2 p {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
