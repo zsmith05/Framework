@@ -33,7 +33,7 @@ body {
   position: relative;
   bottom: 60px;
   width: 40px;
-  left: 500px;
+  left: 800px;
 }
 
 #home {
@@ -129,7 +129,7 @@ body {
 
 .heropage {
   width: 100%;
-  height: 150vh;
+  height: 200vh;
   background-color: white;
 }
 
@@ -153,15 +153,41 @@ body {
   top: 200px;
 }
 
-.heropage .html {
+.heropage .code {
   position: relative;
-  top: 670px;
-  width: 50%;
+  width: 70%;
+  left: 300px;
 }
 
-.heropage .html h2 {
+.heropage .code .grid2 {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (20vh)[4];
+      grid-template-rows: repeat(4, 20vh);
+  overflow: hidden;
+  position: relative;
+  top: 600px;
+}
+
+.heropage .code .grid2 .html {
+  background-color: rgba(163, 163, 163, 0.589);
+  grid-row: span 4;
+}
+
+.heropage .code .grid2 .html h1 {
+  color: white;
   position: relative;
   left: 20px;
+  top: 5px;
+}
+
+.heropage .code .grid2 .css {
+  background-color: rgba(163, 163, 163, 0.589);
+  background-position: center;
+  grid-row: span 4;
 }
 
 .navpage {
@@ -170,12 +196,48 @@ body {
   background-color: #e925cf;
 }
 
+.navpage .nav {
+  background-color: #398632;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  width: 70%;
+  height: 10vh;
+  z-index: 5;
+}
+
+.navpage ul {
+  margin: 0px;
+}
+
+.navpage li {
+  display: inline;
+  position: relative;
+  top: 40px;
+  padding: 30px;
+}
+
+.navpage a {
+  color: white;
+  font-size: 20px;
+}
+
+.navpage h1 {
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  position: relative;
+  bottom: 60px;
+  width: 40px;
+  left: 600px;
+}
+
 .herobar {
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 250px;
+  top: 200px;
   left: 270px;
   width: 70%;
   height: 200px;

@@ -80,7 +80,7 @@
         <h1>Herobar</h1>
         <div id="paragraph1">
             <p>The Herobar is a component you can use to display information and pictures on your 
-                website. This component is often used as a way to introduce your website to your viewers. It provides you with a header, paragraph, and and image space.
+                website. This component is often used as a way to introduce your website to your viewers. It provides you with a header, paragraph, and and image space. In order to use this component, simply copy and paste the HTML and CSS code below and paste into your own CSS and HTML documents
             </p>
         </div>
 
@@ -103,38 +103,114 @@
                  </div>
                </div>
         
-               <div class="html">
-                <h2>HTML Code</h2>
-                <pre>
-              &lt;div class="herobar">
-                
-                 &lt;div class="grid">
-                
-                    &lt;div class="sec1">
-                    
-                        &lt;h1>Welcome!&lt;/h1>
-                    
-                    &lt;/div>
-                
-                    &lt;div class="sec2">
-                        
-                            &lt;p>Image goes here&lt;/p>
-                            
-                    &lt;/div>
-                        
-                 &lt;/div>
-                
-              &lt;/div>
-                </pre>
-                
+            <div class="code">
+                <div class="grid2"> 
+                    <div class="html">
+                        <h1>HTML Code</h1>
+                        <pre>
+                            &lt;div class="herobar">
+                              
+                               &lt;div class="grid">
+                              
+                                  &lt;div class="sec1">
+                                  
+                                      &lt;h1>Welcome!&lt;/h1>
+                                  
+                                  &lt;/div>
+                              
+                                  &lt;div class="sec2">
+                                      
+                                          &lt;p>Image goes here&lt;/p>
+                                          
+                                  &lt;/div>
+                                      
+                               &lt;/div>
+                              
+                            &lt;/div>
+                              </pre>
+                    </div>
+                    <div class="css">
+                        <h1>CSS code</h1>
+                        <pre>
+                            .herobar {
+                                position: relative;
+                                -webkit-box-pack: center;
+                                    -ms-flex-pack: center;
+                                        justify-content: center;
+                                top: 250px;
+                                left: 270px;
+                                width: 70%;
+                                height: 200px;
+                              }
+                              
+                              .herobar .grid {
+                                display: -ms-grid;
+                                display: grid;
+                                -ms-grid-columns: (auto)[2];
+                                    grid-template-columns: repeat(2, auto);
+                                -ms-grid-rows: (20vh)[3];
+                                    grid-template-rows: repeat(3, 20vh);
+                                border-radius: 20px;
+                                overflow: hidden;
+                              }
+                              
+                              .herobar .grid .sec1 {
+                                background-color: #398632;
+                                grid-row: span 3;
+                              }
+                              
+                              .herobar .grid .sec1 h1 {
+                                color: white;
+                                position: relative;
+                                left: 30px;
+                                top: 20px;
+                              }
+                              
+                              .herobar .grid .sec2 {
+                                background-color: gray;
+                                background-position: center;
+                                grid-row: span 3;
+                              }
+                              
+                              .herobar .grid .sec2 p {
+                                text-align: center;
+                              }
+                        </pre>
+                    </div>
+              </div>
     
             </div>
-
+            
               
         
     </div>
 
     <div class="navpage" id="navpage">
+
+        <h2>Navbar</h2>
+
+        
+        <div id="paragraph1">
+                <p>The Herobar is a component you can use to display information and pictures on your 
+                    website. This component is often used as a way to introduce your website to your viewers. It provides you with a header, paragraph, and and image space. In order to use this component, simply copy and paste the HTML and CSS code below and paste into your own CSS and HTML documents
+                </p>
+        </div>
+
+        <h2>Example</h2>
+
+        <nav class="nav">
+        
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><h1>Website </h1></li>
+            </ul>
+       
+        </nav>
+
+      
+
 
     </div> 
 
