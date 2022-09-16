@@ -153,13 +153,13 @@ body {
   top: 200px;
 }
 
-.heropage .code {
+.code {
   position: relative;
   width: 70%;
   left: 300px;
 }
 
-.heropage .code .grid2 {
+.grid2 {
   display: -ms-grid;
   display: grid;
   grid-gap: 30px;
@@ -172,19 +172,19 @@ body {
   top: 600px;
 }
 
-.heropage .code .grid2 .html {
+.grid2 .html {
   background-color: rgba(163, 163, 163, 0.589);
   grid-row: span 4;
 }
 
-.heropage .code .grid2 .html h1 {
+.grid2 .html h1 {
   color: white;
   position: relative;
   left: 20px;
   top: 5px;
 }
 
-.heropage .code .grid2 .css {
+.grid2 .css {
   background-color: rgba(163, 163, 163, 0.589);
   background-position: center;
   grid-row: span 4;
@@ -192,37 +192,42 @@ body {
 
 .navpage {
   width: 100%;
-  height: 100vh;
-  background-color: #e925cf;
+  height: 130vh;
+  background-color: white;
 }
 
-.navpage .nav {
+.navpage h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.nav {
   background-color: #398632;
   position: relative;
   top: 100px;
-  left: 200px;
+  left: 240px;
   width: 70%;
   height: 10vh;
   z-index: 5;
 }
 
-.navpage ul {
+.nav ul {
   margin: 0px;
 }
 
-.navpage li {
+.nav li {
   display: inline;
   position: relative;
   top: 40px;
   padding: 30px;
 }
 
-.navpage a {
+.nav a {
   color: white;
   font-size: 20px;
 }
 
-.navpage h1 {
+.nav h1 {
   color: white;
   text-align: center;
   font-size: 35px;
@@ -230,6 +235,37 @@ body {
   bottom: 60px;
   width: 40px;
   left: 600px;
+}
+
+.grid3 {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (20vh)[3];
+      grid-template-rows: repeat(3, 20vh);
+  overflow: hidden;
+  position: relative;
+  top: 200px;
+}
+
+.grid3 .html {
+  background-color: rgba(163, 163, 163, 0.589);
+  grid-row: span 3;
+}
+
+.grid3 .html h1 {
+  color: white;
+  position: relative;
+  left: 20px;
+  top: 5px;
+}
+
+.grid3 .css {
+  background-color: rgba(163, 163, 163, 0.589);
+  background-position: center;
+  grid-row: span 3;
 }
 
 .herobar {
