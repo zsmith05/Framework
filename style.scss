@@ -185,7 +185,7 @@ body{
 
     .html {
         background-color:rgba(163, 163, 163, 0.589);
-        grid-row: span 4;
+        grid-row: span 3;
 
         h1 {
         color:white;
@@ -323,6 +323,39 @@ body{
             }
         }
     }               
+}
+
+.grid4 {
+    display: grid;
+    grid-gap:30px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows:repeat(2, 20vh);
+    // border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top:200px;
+
+    .html {
+        background-color:rgba(163, 163, 163, 0.589);
+        grid-row: span 2;
+        grid-column: span 1;
+
+        h1 {
+        color:white;
+        position: relative;
+        left:20px;
+        top:5px;
+
+        }
+    }
+    .css {
+        background-color:rgba(163, 163, 163, 0.589);
+        background-position: center;
+        grid-row: span 2;
+        grid-column: span 1;
+
+       
+    }
 }
 
 
