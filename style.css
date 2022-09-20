@@ -2,6 +2,22 @@ body {
   margin: 0px;
 }
 
+.header {
+  text-align: center;
+  font-size: 40px;
+}
+
+.paragraph {
+  font-size: 20px;
+}
+
+.para {
+  font-size: 20px;
+  position: relative;
+  left: 50vh;
+  top: -20vh;
+}
+
 .navvy {
   background-color: #398632;
   position: fixed;
@@ -124,7 +140,30 @@ body {
 .cardpage {
   width: 100%;
   height: 100vh;
-  background-color: #f01c1c;
+  background-color: white;
+}
+
+.card {
+  width: 20%;
+  height: 35vh;
+  background-color: #398632;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  left: 5vh;
+}
+
+.card .card-text {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  color: white;
+}
+
+.card .card-image {
+  background-color: gray;
+  height: 23vh;
+  text-align: center;
 }
 
 .heropage {
@@ -157,6 +196,8 @@ body {
   position: relative;
   width: 70%;
   left: 300px;
+  background-color: transparent;
+  border-width: 5px;
 }
 
 .grid2 {
@@ -322,33 +363,50 @@ body {
       grid-template-rows: repeat(2, 20vh);
   overflow: hidden;
   position: relative;
-  top: 200px;
 }
 
 .grid4 .html {
-  background-color: rgba(163, 163, 163, 0.589);
   grid-row: span 2;
   grid-column: span 1;
+  border-style: solid;
+  border-color: #dddddd;
 }
 
 .grid4 .html h1 {
-  color: white;
+  color: black;
   position: relative;
   left: 20px;
   top: 5px;
+  text-align: center;
 }
 
 .grid4 .css {
-  background-color: rgba(163, 163, 163, 0.589);
-  background-position: center;
   grid-row: span 2;
   grid-column: span 1;
+  border-style: solid;
+  border-color: #dddddd;
+}
+
+.grid4 .css h1 {
+  text-align: center;
 }
 
 .button-page {
   width: 100%;
   height: 100vh;
   background-color: purple;
+}
+
+.button-page .btn {
+  background-color: #398632;
+  width: 12vh;
+  height: 4vh;
+  border-radius: 10px;
+}
+
+.button-page #lg-btn {
+  width: 15vh;
+  height: 5vh;
 }
 
 .formpage {

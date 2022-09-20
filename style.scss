@@ -6,6 +6,23 @@ body{
     margin: 0px;
 }
 
+.header {
+    text-align: center;
+    font-size: $headingSize;
+}
+
+.paragraph {
+    font-size: 20px;
+
+}
+
+.para {
+    font-size: 20px;
+    position: relative;
+    left:50vh;
+    top:-20vh;
+}
+
 
 .navvy {
     background-color:$backgroundColor;
@@ -133,8 +150,33 @@ body{
 .cardpage {
     width: 100%;
     height: 100vh;
-    background-color: rgb(240, 28, 28);
+    background-color: rgb(255, 255, 255);
 }
+
+.card {
+    width: 20%;
+    height: 35vh;
+    background-color:$backgroundColor ;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    left:5vh;
+
+    .card-text {
+        width:100%;
+        height: 10vh;
+        text-align: center;
+        color: $color;
+    }
+
+    .card-image {
+        background-color: gray;
+        height: 23vh;
+        text-align: center;
+    }
+}
+
+
 
 .heropage {
     width: 100%;
@@ -168,7 +210,9 @@ body{
     position: relative;
     width: 70%;
     left:300px;
-
+    background-color: transparent;
+    border-width: 5px;
+    
 
        
 }    
@@ -333,26 +377,36 @@ body{
     // border-radius: 20px;
     overflow: hidden;
     position: relative;
-    top:200px;
+    
+
+    
+
 
     .html {
-        background-color:rgba(163, 163, 163, 0.589);
         grid-row: span 2;
         grid-column: span 1;
+        border-style: solid;
+        border-color: rgb(221, 221, 221);
 
         h1 {
-        color:white;
+        color:black;
         position: relative;
         left:20px;
         top:5px;
+        text-align: center;
 
         }
     }
     .css {
-        background-color:rgba(163, 163, 163, 0.589);
-        background-position: center;
         grid-row: span 2;
         grid-column: span 1;
+        border-style: solid;
+        border-color: rgb(221, 221, 221);
+
+
+        h1 {
+            text-align: center;
+        }
 
        
     }
@@ -362,6 +416,19 @@ body{
     width: 100%;
     height: 100vh;
     background-color: purple;
+
+    .btn {
+        background-color: $backgroundColor;
+        width:12vh;
+        height: 4vh;
+        border-radius: 10px;
+        
+    }
+
+    #lg-btn {
+        width:15vh;
+        height: 5vh;
+    }
 }
 
 
