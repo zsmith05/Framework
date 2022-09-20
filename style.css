@@ -5,6 +5,8 @@ body {
 .header {
   text-align: center;
   font-size: 40px;
+  position: relative;
+  top: 5vh;
 }
 
 .paragraph {
@@ -16,6 +18,12 @@ body {
   position: relative;
   left: 50vh;
   top: -20vh;
+  margin: 0px;
+}
+
+#para2 {
+  position: relative;
+  top: 5vh;
 }
 
 .navvy {
@@ -121,12 +129,15 @@ body {
   color: #398632;
   position: relative;
   top: 10px;
+  width: 50vh;
 }
 
 .comp #links {
   position: relative;
-  left: 1400px;
+  left: 50%;
   top: -85px;
+  width: 30vh;
+  margin: 0px;
 }
 
 .comp #links h1 {
@@ -198,6 +209,7 @@ body {
   left: 300px;
   background-color: transparent;
   border-width: 5px;
+  margin: 0px;
 }
 
 .grid2 {
@@ -397,16 +409,38 @@ body {
   background-color: purple;
 }
 
+.button-page .buttons {
+  position: relative;
+  top: 8vh;
+  padding: 5px;
+}
+
+.button-page .buttons ul {
+  display: inline;
+}
+
+.button-page .buttons li {
+  padding: 0.5%;
+}
+
 .button-page .btn {
   background-color: #398632;
-  width: 12vh;
-  height: 4vh;
   border-radius: 10px;
 }
 
 .button-page #lg-btn {
   width: 15vh;
   height: 5vh;
+}
+
+.button-page #md-btn {
+  width: 12vh;
+  height: 4vh;
+}
+
+.button-page #sm-btn {
+  width: 8vh;
+  height: 3vh;
 }
 
 .formpage {
