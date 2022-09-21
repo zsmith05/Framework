@@ -419,14 +419,44 @@
         <h1>Forms</h1>
         <p>Forms are a tool to help collect input from the user. A form has many uses, including entering login information, anwsering a survey, or to save information about the user, such as their name.</p>
 
-        <div class="forms">
+        <div class="exforms">
             <h2>Example of a form being used for a login</h2>
             <label for="letter">Username</label>
             <input type="text" id="letter">
             <label for="letter">Password</label>
             <input type="text" id="letter">
         </div>
-        
+        <div class="forms">
+            <h2>Default form</h2>
+            <label for="input">Text here</label>
+            <input type="text" id="input">
+        </div>
+        <div class="code" id="formcode"> 
+            <div class="grid5">
+                <div class= "html">
+                    <pre>
+                        &lt;label for="input">Text here &lt;/label>
+                        &lt;input type="text" id="input">
+                    </pre>
+                </div>
+                <div class="css">
+                    <pre>
+                         input {
+                        height: 3vh;
+                        width: 30vh;
+                        border-style: solid;
+                        border-color: #398632;
+                        border-radius: 5px;
+                      }
+
+                      label {
+                        display:block;
+                    }
+                    </pre>
+                   
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="gridpage">
