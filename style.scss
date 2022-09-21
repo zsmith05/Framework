@@ -425,12 +425,19 @@ body{
 
 .button-page {
     width: 100%;
-    height: 100vh;
-    background-color: purple;
+    height: 120vh;
+    background-color: rgb(255, 255, 255);
 
-    .buttons {
+    #para2 {
+        text-align: center;
+    }
+    
+}
+
+.buttons {
         position: relative;
-        top:8vh;
+        top:9vh;
+        left:35%;
         padding: 5px;
         
         ul {
@@ -440,12 +447,14 @@ body{
 
         li {
             padding: 0.5%;
+            display: inline;
         }
-    }
+}
 
     .btn {
         background-color: $backgroundColor;
         border-radius: 10px;
+        border-style: solid;
         
     }
 
@@ -463,14 +472,78 @@ body{
         width: 8vh;
         height: 3vh;
     }
+
+#buttoncode {
+    position: relative;
+    top:20vh;
 }
 
+.grid5 {
+        display: grid;
+        grid-gap:30px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows:repeat(3, 20vh);
+        // border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        
+        .html {
+            grid-row: span 2;
+            grid-column: span 1;
+            border-style: solid;
+            border-color: rgb(221, 221, 221);
+    
+            h1 {
+            color:black;
+            position: relative;
+            left:20px;
+            top:5px;
+            text-align: center;
+    
+            }
+        }
+        .css {
+            grid-row: span 3;
+            grid-column: span 1;
+            border-style: solid;
+            border-color: rgb(221, 221, 221);
+    
+    
+            h1 {
+                text-align: center;
+            }
+    
+           
+        }
 
+        h3 {
+            position: relative;
+            left:10vh;
+        }
+    }
 .formpage {
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 119, 237);
+    padding:1%;
+    .forms {
+        position: relative;
+        top:5vh;
+       
+    }
+
+    label {
+        display:block;
+    }
 }
+
+input {
+    height: 3vh;
+    width: 30vh;
+    border-style: solid;
+    border-color:$backgroundColor;
+}
+
 
 
 .gridpage {

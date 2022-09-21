@@ -71,7 +71,7 @@
                 <li><a href = "#heropage">Herobar</a></li>
                 <li><a href = "#navpage">Navbar</a></li>
                 <li><a href = "#cardpage">Cards</a></li>
-                <li><a href = "">Buttons</a></li>
+                <li><a href = "#button-page">Buttons</a></li>
                 <li><a href = "">Forms</a></li>
                 <li><a href = "">Grid System</a></li>
                 <li><a href = "">Modal</a></li>
@@ -343,7 +343,7 @@
        
     </div>
 
-    <div class="button-page">
+    <div class="button-page" id="button-page">
         <h1 class= "header">
             Buttons
         </h1>
@@ -352,17 +352,81 @@
         </p>
         <div class="buttons">
             <ul>
-                <li><button class="btn" id="lg-btn">Lg</button></li> 
-                <li><button class="btn" id="md-btn">Med</button></li> 
-                 <li><button class="btn" id="sm-btn">Sm</button></li>
+                <li><button type="button" class="btn" id="lg-btn">Lg</button></li> 
+                <li><button type="button" class="btn" id="md-btn">Med</button></li> 
+                <li><button type="button" class="btn" id="sm-btn">Sm</button></li>
             </ul>
        
+        </div>
+
+        <div class="code" id ="buttoncode">
+            <div class="grid5">
+                <div class="html">
+                    <h1>HTML Code</h1>
+                    <h3>Large button</h3>
+                    <pre>
+                        &lt;button type="button" class="btn" id="lg-btn">Lg &lt;/button>
+                    </pre>
+                    <h3>Medium sized button</h3>
+                    <pre> 
+                        &lt;button type="button" class="btn" id="md-btn">Med &lt;/button>
+                    </pre>
+                    <h3>Small sized button</h3>
+                    <pre>
+                        &lt;button type="button" class="btn" id="sm-btn">Sm &lt;/button>
+                    </pre>
+                </div>
+                <div class="css">
+                    <h1>CSS Code</h1>
+                     <h3>Main CSS</h3>
+                    <pre>
+                        .btn {
+                            background-color: #398632;
+                            border-radius: 10px;
+                            border-style: solid;
+                          }
+                    </pre>
+                    <h3>CSS for Large size</h3>
+                    <pre>
+                        #lg-btn {
+                            width: 15vh;
+                            height: 5vh;
+                          }
+                          
+                    </pre>
+                    <h3>CSS for Medium size</h3>
+                   
+                    <pre>
+                        #md-btn {
+                            width: 12vh;
+                            height: 4vh;
+                          }
+                    </pre>
+                    <h3>CSS for Small size</h3>
+                    <pre>
+                        #sm-btn {
+                            width: 8vh;
+                            height: 3vh;
+                          }
+                    </pre>
+                </div>
+            </div>
         </div>
 
     </div>
 
     <div class="formpage">
+        <h1>Forms</h1>
+        <p>Forms are a tool to help collect input from the user. A form has many uses, including entering login information, anwsering a survey, or to save information about the user, such as their name.</p>
 
+        <div class="forms">
+            <h2>Example of a form being used for a login</h2>
+            <label for="letter">Username</label>
+            <input type="text" id="letter">
+            <label for="letter">Password</label>
+            <input type="text" id="letter">
+        </div>
+        
     </div>
 
     <div class="gridpage">

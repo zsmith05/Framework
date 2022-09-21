@@ -405,48 +405,120 @@ body {
 
 .button-page {
   width: 100%;
-  height: 100vh;
-  background-color: purple;
+  height: 120vh;
+  background-color: white;
 }
 
-.button-page .buttons {
+.button-page #para2 {
+  text-align: center;
+}
+
+.buttons {
   position: relative;
-  top: 8vh;
+  top: 9vh;
+  left: 35%;
   padding: 5px;
 }
 
-.button-page .buttons ul {
+.buttons ul {
   display: inline;
 }
 
-.button-page .buttons li {
+.buttons li {
   padding: 0.5%;
+  display: inline;
 }
 
-.button-page .btn {
+.btn {
   background-color: #398632;
   border-radius: 10px;
+  border-style: solid;
 }
 
-.button-page #lg-btn {
+#lg-btn {
   width: 15vh;
   height: 5vh;
 }
 
-.button-page #md-btn {
+#md-btn {
   width: 12vh;
   height: 4vh;
 }
 
-.button-page #sm-btn {
+#sm-btn {
   width: 8vh;
   height: 3vh;
+}
+
+#buttoncode {
+  position: relative;
+  top: 20vh;
+}
+
+.grid5 {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (20vh)[3];
+      grid-template-rows: repeat(3, 20vh);
+  overflow: hidden;
+  position: relative;
+}
+
+.grid5 .html {
+  grid-row: span 2;
+  grid-column: span 1;
+  border-style: solid;
+  border-color: #dddddd;
+}
+
+.grid5 .html h1 {
+  color: black;
+  position: relative;
+  left: 20px;
+  top: 5px;
+  text-align: center;
+}
+
+.grid5 .css {
+  grid-row: span 3;
+  grid-column: span 1;
+  border-style: solid;
+  border-color: #dddddd;
+}
+
+.grid5 .css h1 {
+  text-align: center;
+}
+
+.grid5 h3 {
+  position: relative;
+  left: 10vh;
 }
 
 .formpage {
   width: 100%;
   height: 100vh;
   background-color: #ff77ed;
+  padding: 1%;
+}
+
+.formpage .forms {
+  position: relative;
+  top: 5vh;
+}
+
+.formpage label {
+  display: block;
+}
+
+input {
+  height: 3vh;
+  width: 30vh;
+  border-style: solid;
+  border-color: #398632;
 }
 
 .gridpage {
