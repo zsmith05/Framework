@@ -650,6 +650,59 @@ input {
     background-color: rgb(58, 216, 255);
 }
 
+.exmodal {
+    position: relative;
+    left:75vh;
+    top:20vh;
+
+}
+
+.modal {
+    width: 50vh;
+    height: 23vh;
+    background-color: #398632;
+    border-radius: 15px;
+    color:white;
+
+    h3 {
+        padding:5px;
+        text-align: center;
+        font-size: 23px;
+    }
+
+    p {
+        position: relative;
+        font-size:19px;
+        left:2%;
+    }
+
+    .close {
+        width: 10vh;
+        height: 4vh;
+        background-color: rgb(170, 170, 170);
+        color:white;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 10px;
+    }
+
+    .save {
+        width: 10vh;
+        height: 4vh;
+        background-color:white;
+        color:$backgroundColor;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 10px;
+    }
+
+    #modbtns {
+        position: relative;
+        top:7vh;
+        left:28vh;
+        
+    }
+}
 
 
 
