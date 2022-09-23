@@ -628,6 +628,7 @@ input {
 .grid7 {
   display: -ms-grid;
   display: grid;
+  width: 70%;
   grid-gap: 30px;
   -ms-grid-columns: (auto)[2];
       grid-template-columns: repeat(2, auto);
@@ -651,6 +652,21 @@ input {
   position: relative;
   left: 20px;
   top: 5px;
+  text-align: center;
+}
+
+.grid7 .css {
+  grid-row: span 2;
+  grid-column: span 1;
+  border-style: solid;
+  border-color: #398632;
+  background-color: #39863275;
+  position: relative;
+  top: -72vh;
+  left: 95vh;
+}
+
+.grid7 .css h1 {
   text-align: center;
 }
 
