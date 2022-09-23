@@ -657,7 +657,7 @@ input {
 
 }
 
-.modal {
+.modal2 {
     width: 50vh;
     height: 23vh;
     background-color: #398632;
@@ -696,14 +696,74 @@ input {
         border-radius: 10px;
     }
 
-    #modbtns {
+    
+}
+
+.modal {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    width: 50vh;
+    height: 23vh;
+    background-color: #398632;
+    border-radius: 15px;
+    color:white;
+
+    h3 {
+        padding:5px;
+        text-align: center;
+        font-size: 23px;
+    }
+
+    p {
+        position: relative;
+        font-size:19px;
+        left:2%;
+    }
+
+    .close {
+        width: 10vh;
+        height: 4vh;
+        background-color: rgb(170, 170, 170);
+        color:white;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 10px;
+    }
+
+    .save {
+        width: 10vh;
+        height: 4vh;
+        background-color:white;
+        color:$backgroundColor;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 10px;
+    }
+
+    
+}
+#modbtns {
         position: relative;
         top:7vh;
         left:28vh;
         
     }
+
+.modbtn {
+    width: 10vh;
+    height: 4vh;
+    background-color:rgb(68, 87, 255);
+    color:white;
+    border-style: solid;
+    border-color: transparent;
+   
 }
 
+.modbtn:hover {
+    filter: brightness(70%);
+    cursor: pointer;
+}
 
 
 
