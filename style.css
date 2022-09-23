@@ -588,7 +588,7 @@ input {
 .gridpage {
   width: 100%;
   height: 125vh;
-  background-color: #048000;
+  background-color: white;
 }
 
 .gridpage .grid-container {
