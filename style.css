@@ -587,7 +587,7 @@ input {
 
 .gridpage {
   width: 100%;
-  height: 100vh;
+  height: 125vh;
   background-color: #048000;
 }
 
@@ -625,6 +625,35 @@ input {
   text-align: center;
 }
 
+.grid7 {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (20vh)[3];
+      grid-template-rows: repeat(3, 20vh);
+  position: relative;
+  bottom: 15vh;
+  left: -30vh;
+}
+
+.grid7 .html {
+  grid-row: span 4;
+  grid-column: span 3;
+  border-style: solid;
+  border-color: #398632;
+  background-color: #39863275;
+}
+
+.grid7 .html h1 {
+  color: black;
+  position: relative;
+  left: 20px;
+  top: 5px;
+  text-align: center;
+}
+
 .modalpage {
   width: 100%;
   height: 100vh;
@@ -637,7 +666,50 @@ input {
   top: 20vh;
 }
 
+.modal2 {
+  width: 50vh;
+  height: 23vh;
+  background-color: #398632;
+  border-radius: 15px;
+  color: white;
+}
+
+.modal2 h3 {
+  padding: 5px;
+  text-align: center;
+  font-size: 23px;
+}
+
+.modal2 p {
+  position: relative;
+  font-size: 19px;
+  left: 2%;
+}
+
+.modal2 .close {
+  width: 10vh;
+  height: 4vh;
+  background-color: #aaaaaa;
+  color: white;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 10px;
+}
+
+.modal2 .save {
+  width: 10vh;
+  height: 4vh;
+  background-color: white;
+  color: #398632;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 10px;
+}
+
 .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
   width: 50vh;
   height: 23vh;
   background-color: #398632;
@@ -677,9 +749,24 @@ input {
   border-radius: 10px;
 }
 
-.modal #modbtns {
+#modbtns {
   position: relative;
   top: 7vh;
   left: 28vh;
+}
+
+.modbtn {
+  width: 10vh;
+  height: 4vh;
+  background-color: #4457ff;
+  color: white;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.modbtn:hover {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

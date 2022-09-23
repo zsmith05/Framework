@@ -518,13 +518,102 @@
                </div>
             </div>
         </div>
+        <div class="code" id="formcode">
+            <div class="grid7">
+                <div class="html">
+                    <h1>HTML Code</h1>
+                    <pre>
+                        &lt;div class="grid-container">
+                            &lt;div class="grid-item">
+                                &lt;div class="card">
+                                    &lt;div class="card-image">
+                                        &lt;img src= "..." >
+                                        &lt;p>image goes here &lt;/p>
+                                    &lt;/div>
+                                   
+                                    &lt;div class="card-text">
+                                        &lt;p>Use this space to place some text. &lt;/p>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="grid-item">
+                                &lt;div class="card">
+                                    &lt;div class="card-image">
+                                        &lt;img src= "..." >
+                                        &lt;p>image goes here &lt;/p>
+                                    &lt;/div>
+                                   
+                                    &lt;div class="card-text">
+                                        &lt;p>Use this space to place some text. &lt;/p>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="grid-item">
+                                &lt;div class="card">
+                                    &lt;div class="card-image">
+                                        &lt;img src= "..." >
+                                        &lt;p>image goes here &lt;/p>
+                                    &lt;/div>
+                                   
+                                    &lt;div class="card-text">
+                                        &lt;p>Use this space to place some text. &lt;/p>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+                            
+                        </div>
+                    </pre>
+                </div>
+                <!-- <div class="css">
+                    <h1>CSS Code</h1>
+                    <pre>
+                        .gridpage {
+                            width: 100%;
+                            height: 100vh;
+                            background-color: rgb(4, 128, 0);
+                            .grid-container {
+                                display: grid;
+                                grid-template-columns: auto auto auto;
+                                gap: 0px;
+                                justify-content: space-evenly;
+                                .card {
+                                    width: 100%;
+                                    height: 35vh;
+                                    background-color:$backgroundColor ;
+                                    border-radius: 15px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    left:5vh;
+                                
+                                    .card-text {
+                                        width:90%;
+                                        height: 10vh;
+                                        text-align: center;
+                                        color: $color;
+                                    }
+                                
+                                    .card-image {
+                                        background-color: gray;
+                                        height: 23vh;
+                                        text-align: center;
+                                    }
+                                }
+                        
+                            }
+                        }
+                    </pre>
+                </div> -->
+            </div>
+
+        </div>
     </div>
 
     <div class= "modalpage">
         <h1 class="header">Modal</h1>
         <p class="paragraph">Info about Modal</p>
+        <h2>Example of a Modal</h2>
         <div class="exmodal">
-            <div class="modal">
+            <div class="modal2">
                         <h3>Modal Title</h3>
                         <p>Body text goes here.</p>
                         <div id="modbtns">
@@ -533,8 +622,22 @@
                         </div>
                         
             </div>
+         
         </div>
-        
+        <h2>Modal in Live Mode</h2>
+
+        <div class="livemodal">
+            <div class="modal">
+                <h3>Modal Title</h3>
+                <p>Body text goes here.</p>
+                <div id="modbtns">
+                    <button type= "button"  class="close" >Close</button>
+                    <button type= "button"  class="save" >Save</button>
+                </div>
+                
+            </div>
+            <button type="button" class="modbtn" >Modal</button>
+        </div>
 
 
 
@@ -543,6 +646,6 @@
 
 
 
-    
+<script src="app.js"></script>
 </body>
 </html>
