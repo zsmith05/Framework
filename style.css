@@ -507,13 +507,13 @@ body {
 .formpage {
   width: 100%;
   height: 100vh;
-  background-color: #ff77ed;
+  background-color: white;
   padding: 1%;
 }
 
 .formpage .exforms {
   position: relative;
-  top: 5vh;
+  top: 10vh;
 }
 
 .formpage .forms {
@@ -525,7 +525,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   left: 40%;
-  top: 20%;
+  top: 10vh;
 }
 
 .formpage label {
@@ -538,6 +538,51 @@ input {
   border-style: solid;
   border-color: #398632;
   border-radius: 5px;
+}
+
+.grid6 {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (20vh)[2];
+      grid-template-rows: repeat(2, 20vh);
+  overflow: hidden;
+  position: relative;
+}
+
+.grid6 .html {
+  grid-row: span 1;
+  grid-column: span 1;
+  border-style: solid;
+  border-color: #398632;
+  background-color: #39863275;
+}
+
+.grid6 .html h1 {
+  color: black;
+  position: relative;
+  left: 20px;
+  top: 5px;
+  text-align: center;
+}
+
+.grid6 .css {
+  grid-row: span 2;
+  grid-column: span 1;
+  border-style: solid;
+  border-color: #398632;
+  background-color: #39863275;
+}
+
+.grid6 .css h1 {
+  text-align: center;
+}
+
+#formcode {
+  position: relative;
+  top: 15vh;
 }
 
 .gridpage {
