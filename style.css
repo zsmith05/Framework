@@ -630,4 +630,56 @@ input {
   height: 100vh;
   background-color: #3ad8ff;
 }
+
+.exmodal {
+  position: relative;
+  left: 75vh;
+  top: 20vh;
+}
+
+.modal {
+  width: 50vh;
+  height: 23vh;
+  background-color: #398632;
+  border-radius: 15px;
+  color: white;
+}
+
+.modal h3 {
+  padding: 5px;
+  text-align: center;
+  font-size: 23px;
+}
+
+.modal p {
+  position: relative;
+  font-size: 19px;
+  left: 2%;
+}
+
+.modal .close {
+  width: 10vh;
+  height: 4vh;
+  background-color: #aaaaaa;
+  color: white;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 10px;
+}
+
+.modal .save {
+  width: 10vh;
+  height: 4vh;
+  background-color: white;
+  color: #398632;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 10px;
+}
+
+.modal #modbtns {
+  position: relative;
+  top: 7vh;
+  left: 28vh;
+}
 /*# sourceMappingURL=style.css.map */
