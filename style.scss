@@ -611,7 +611,7 @@ input {
 .gridpage {
     width: 100%;
     height: 125vh;
-    background-color: rgb(4, 128, 0);
+    background-color: rgb(255, 255, 255);
     .grid-container {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -651,11 +651,11 @@ input {
     // border-radius: 20px;
     // overflow: hidden;
     position: relative;
-    bottom: 15vh;
-    left: -30vh;
+    
+    // left: 20vh;
     .html {
-        grid-row: span 4;
-        grid-column: span 3;
+        grid-row: span 3;
+        grid-column: span 1;
         border-style: solid;
         border-color:#398632;
         background-color:#39863275;
@@ -670,14 +670,14 @@ input {
         }
     }
     .css {
-        grid-row: span 2;
+        grid-row: span 3;
         grid-column: span 1;
         border-style: solid;
         border-color:#398632;
         background-color:#39863275;
         position: relative;
-        top: -72vh;
-        left: 95vh;
+        // top: -72vh;
+        // left: 95vh;
 
         h1 {
             text-align: center;

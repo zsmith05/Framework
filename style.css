@@ -635,13 +635,11 @@ input {
   -ms-grid-rows: (20vh)[3];
       grid-template-rows: repeat(3, 20vh);
   position: relative;
-  bottom: 15vh;
-  left: -30vh;
 }
 
 .grid7 .html {
-  grid-row: span 4;
-  grid-column: span 3;
+  grid-row: span 3;
+  grid-column: span 1;
   border-style: solid;
   border-color: #398632;
   background-color: #39863275;
@@ -656,14 +654,12 @@ input {
 }
 
 .grid7 .css {
-  grid-row: span 2;
+  grid-row: span 3;
   grid-column: span 1;
   border-style: solid;
   border-color: #398632;
   background-color: #39863275;
   position: relative;
-  top: -72vh;
-  left: 95vh;
 }
 
 .grid7 .css h1 {
