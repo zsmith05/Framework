@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  font-family: 'Inter', sans-serif;
 }
 
 .header {
@@ -10,7 +11,8 @@ body {
 }
 
 .paragraph {
-  font-size: 20px;
+  font-size: 17px;
+  line-height: 4vh;
 }
 
 .para {
@@ -115,6 +117,7 @@ body {
 .start #items {
   position: relative;
   top: 50px;
+  margin: 10px;
 }
 
 .comp {
@@ -129,12 +132,23 @@ body {
   color: #398632;
   position: relative;
   top: 10px;
-  width: 50vh;
+  width: 60vh;
+  font-size: 40px;
+}
+
+.comp #webinfo {
+  width: 60vh;
+  padding: 10px;
+}
+
+.comp #webinfo p {
+  font-size: 17px;
+  line-height: 4vh;
 }
 
 .comp #links {
   position: relative;
-  left: 50%;
+  left: 80%;
   top: -85px;
   width: 30vh;
   margin: 0px;
