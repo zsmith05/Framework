@@ -99,9 +99,9 @@
                 <li><a href = "#navpage">Navbar</a></li>
                 <li><a href = "#cardpage">Cards</a></li>
                 <li><a href = "#button-page">Buttons</a></li>
-                <li><a href = "">Forms</a></li>
-                <li><a href = "">Grid System</a></li>
-                <li><a href = "">Modal</a></li>
+                <li><a href = "#formpage">Forms</a></li>
+                <li><a href = "#gridpage">Grid System</a></li>
+                <li><a href = "#modalpage">Modal</a></li>
 
             </ul>
         </div>
@@ -442,16 +442,20 @@
 
     </div>
 
-    <div class="formpage">
+    <div class="formpage" id="formpage">
         <h1 class="header">Forms</h1>
         <p class="paragraph" id="para2">Forms are a tool to help collect input from the user. A form has many uses, including entering login information, anwsering a survey, or to save information about the user, such as their name.</p>
-
+        
         <div class="exforms">
+            <hr class="border">
             <h2>Example of a form being used for a login</h2>
             <label for="letter">Username</label>
             <input type="text" id="letter">
             <label for="letter">Password</label>
             <input type="text" id="letter">
+        </div>
+        <div id="exinfo">
+            <p>In this example, we are using forms to create a way for a user to login. This is one of the many ways a form can be utilized.</p>
         </div>
         <div class="forms">
             <h2>Default form</h2>
@@ -488,8 +492,12 @@
         </div>
     </div>
 
-    <div class="gridpage">
-        <h1>Grid System</h1>
+    <div class="gridpage" id="gridpage">
+        <div id="gridinfo">
+             <h1 class="header">Grid System</h1>
+             <p class="paragraph">A grid system is one of the most useful things when designing a website. Grids are used when you want to align items next to each other, but don't want to have to do it manually with position relative. In the example shown below, we used our grid system to align cards next to each other, but you can also use it for other components such as divs. If you want to use the grid system for somthing other than divs, simply delete the content inside the "grid-item" div.</p>
+        </div>
+       
         <div class="grid-container">
             <div class="grid-item">
                 <div class="card">
@@ -619,7 +627,7 @@
     </div>
     
 
-    <div class= "modalpage">
+    <div class= "modalpage" id="modalpage">
         <h1 class="header">Modal</h1>
         <p class="paragraph">Info about Modal</p>
         <h2>Example of a Modal</h2>
@@ -647,7 +655,7 @@
                 </div>
                 
             </div>
-            <button type="button" class="modbtn" >Modal</button>
+            <button onclick="drop()" class="modbtn" >Modal</button>
         </div>
 
 
