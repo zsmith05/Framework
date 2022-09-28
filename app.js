@@ -1,13 +1,13 @@
-var modal = document.getElementsByClassName("modal");
+var modal = document.getElementById("modal");
 
-var btn = document.getElementsByClassName("modbtn");
+var btn = document.getElementById("modbtn");
 
-var close = document.getElementsByClassName("close");
+var closed = document.getElementById("close");
 
 function drop(){
-    document.getElementsByClassName("modal").style.display="block";
+    modal.style.display = "block";
 }
 
-close.onclick = function() {
+function closeModal() {
     modal.style.display = "none";
 }
