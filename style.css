@@ -581,12 +581,12 @@ input {
   grid-row: span 2;
   grid-column: span 1;
   border-style: solid;
-  border-color: #398632;
-  background-color: #39863275;
+  border-width: .7px;
+  border-color: #aaaaaa;
 }
 
 .grid6 .html h1 {
-  color: black;
+  color: #398632;
   position: relative;
   left: 20px;
   top: 5px;
@@ -597,12 +597,13 @@ input {
   grid-row: span 2;
   grid-column: span 1;
   border-style: solid;
-  border-color: #398632;
-  background-color: #39863275;
+  border-width: .7px;
+  border-color: #aaaaaa;
 }
 
 .grid6 .css h1 {
   text-align: center;
+  color: #398632;
 }
 
 #formcode {
@@ -649,7 +650,7 @@ input {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   position: relative;
-  top: 35vh;
+  top: 25vh;
 }
 
 .gridpage .grid-container .card {
@@ -693,8 +694,8 @@ input {
   grid-row: span 3;
   grid-column: span 1;
   border-style: solid;
-  border-color: #398632;
-  background-color: #39863275;
+  border-width: .7px;
+  border-color: #aaaaaa;
 }
 
 .grid7 .html h1 {
@@ -709,8 +710,8 @@ input {
   grid-row: span 3;
   grid-column: span 1;
   border-style: solid;
-  border-color: #398632;
-  background-color: #39863275;
+  border-color: #868686;
+  border-width: .7px;
   position: relative;
 }
 
@@ -772,7 +773,7 @@ input {
 
 .modal {
   display: none;
-  position: relative;
+  position: fixed;
   z-index: 1;
   width: 50vh;
   height: 23vh;

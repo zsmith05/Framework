@@ -86,7 +86,7 @@
 
     <div id="comp" class="comp">
         <div id="webinfo">
-            <h1 >Make your website come alive with Components</h1>
+            <h1 class="header">Make your website come alive with Components</h1>
 
             <p>Components are the building blocks to your website. A component is a part of a website or application that helps display information. A component can be somthing as simple as a header, or an image. If you are making a website and don't know where to start, you have come to the right place. On Clover, we hope to provide components that are an effiecent and easy to use.  </p>
 
@@ -108,7 +108,7 @@
     </div> 
 
     <div class="heropage" id="heropage">
-        <h1>Herobar</h1>
+        <h1 class="header">Herobar</h1>
         <div id="paragraph1">
             <p>The Herobar is a component you can use to display information and pictures on your 
                 website. This component is often used as a way to introduce your website to your viewers. It provides you with a header, paragraph, and and image space. In order to use this component, simply copy and paste the HTML and CSS code below and paste into your own CSS and HTML documents
@@ -218,7 +218,7 @@
 
     <div class="navpage" id="navpage">
 
-        <h1>Navbar</h1>
+        <h1 class="header">Navbar</h1>
 
         
         <div id="paragraph1">
@@ -495,7 +495,7 @@
     <div class="gridpage" id="gridpage">
         <div id="gridinfo">
              <h1 class="header">Grid System</h1>
-             <p class="paragraph">A grid system is one of the most useful things when designing a website. Grids are used when you want to align items next to each other, but don't want to have to do it manually with position relative. In the example shown below, we used our grid system to align cards next to each other, but you can also use it for other components such as divs. If you want to use the grid system for somthing other than divs, simply delete the content inside the "grid-item" div.</p>
+             <p class="paragraph">A grid system is one of the most useful things when designing a website. Grids are used when you want to align items next to each other, but don't want to have to do it manually with position relative. In the example shown below, we used our grid system to align cards next to each other, but you can also use it for other components such as divs. If you want to use the grid system without the cards, simply delete the content inside the "grid-item" div.</p>
         </div>
        
         <div class="grid-container">
@@ -645,18 +645,18 @@
         </div>
         <h2>Modal in Live Mode</h2>
 
-        <div class="livemodal">
-            <div id="modal" class="modal">
+        <!-- <div class="livemodal"> -->
+            <div class="modal">
                 <h3>Modal Title</h3>
                 <p>Body text goes here.</p>
                 <div id="modbtns">
-                    <button type= "button" onclick=closeModal() id="close" >Close</button>
+                    <button type= "button"  class="close" >Close</button>
                     <button type= "button"  class="save" >Save</button>
                 </div>
                 
             </div>
-            <button onclick=drop() class="modbtn" id="modbtn" >Modal</button>
-        </div>
+            <button onclick="drop()" class="modbtn" >Modal</button>
+        <!-- </div> -->
 
 
 
