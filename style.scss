@@ -752,13 +752,20 @@ input {
 .modalpage {
     width: 100%;
     height: 100vh;
-    background-color: rgb(58, 216, 255);
+    background-color: rgb(255, 255, 255);
+
+    h2 {
+        position: relative;
+        top:10vh;
+        left:1vh;
+    }
 }
 
 .exmodal {
     position: relative;
-    left:75vh;
+    left:76vh;
     top:20vh;
+   
 
 }
 
@@ -768,6 +775,11 @@ input {
     background-color: #398632;
     border-radius: 15px;
     color:white;
+    position: relative;
+    right:75vh;
+    bottom: 10vh;
+   
+    
 
     h3 {
         padding:5px;
@@ -789,6 +801,8 @@ input {
         border-style: solid;
         border-color: transparent;
         border-radius: 10px;
+        position: relative;
+        bottom:1vh;
     }
 
     .save {
@@ -799,6 +813,8 @@ input {
         border-style: solid;
         border-color: transparent;
         border-radius: 10px;
+        position: relative;
+        bottom:1vh;
     }
 
     
@@ -813,6 +829,9 @@ input {
     background-color: #398632;
     border-radius: 15px;
     color:white;
+    position: relative;
+    top:15vh;
+    left:1vh;
 
     h3 {
         padding:5px;
@@ -834,6 +853,10 @@ input {
         border-style: solid;
         border-color: transparent;
         border-radius: 10px;
+        position: relative;
+        bottom:1vh;
+        
+        
     }
 
     .save {
@@ -844,16 +867,37 @@ input {
         border-style: solid;
         border-color: transparent;
         border-radius: 10px;
+        position: relative;
+        bottom:1vh;
+       
+        
     }
 
-    
+    .save:hover {
+        filter: brightness(70%);
+        cursor: pointer;
+    }
+
+    .close:hover {
+        filter: brightness(70%);
+        cursor: pointer;
+    }
+
+
+  
+
+   
 }
+
+
+
 #modbtns {
         position: relative;
+        bottom:1vh;
         top:7vh;
         left:28vh;
         
-    }
+}
 
 .modbtn {
     width: 10vh;
@@ -862,6 +906,10 @@ input {
     color:white;
     border-style: solid;
     border-color: transparent;
+    position: relative;
+    top:10vh;
+    left:1vh;
+
    
 }
 
@@ -870,8 +918,56 @@ input {
     cursor: pointer;
 }
 
+#para3 {
+    position: relative;
+    padding:5px;
+    top:7vh;
+    text-align: center;
+}
+
+.grid8 {
+    display: grid;
+    width: 70%;
+    grid-gap:30px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows:repeat(3, 20vh);
+    // border-radius: 20px;
+    overflow: hidden;
+
+    .html {
+        grid-row: span 2;
+        grid-column: span 1;
+        border-style: solid;
+        border-width: .7px;
+        border-color:#aaaaaa;
+        // background-color:#39863275;
+
+      
+    }
+    .css {
+        grid-row: span 3;
+        grid-column: span 1;
+        border-style: solid;
+        border-color:#868686;
+        border-width: .7px;
+        // background-color:#39863275;
+        position: relative;
+        // top: -72vh;
+        // left: 95vh;
 
 
+       
+    }
+
+    .java {
+        grid-row: span 2;
+        grid-column: span 1;
+        border-style: solid;
+        border-width: .7px;
+        border-color:#aaaaaa;
+    }
+
+}
 
 
 

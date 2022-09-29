@@ -629,7 +629,7 @@
 
     <div class= "modalpage" id="modalpage">
         <h1 class="header">Modal</h1>
-        <p class="paragraph">Info about Modal</p>
+        <p class="paragraph" id="para3">A Modal is one of our most special componenets. We used Javascript, HTML, and CSS to create our Modal. It has many uses, such as an alert, a save option, or display a message. Below we have two examples: a still version and a live version of our Modal.   </p>
         <h2>Example of a Modal</h2>
         <div class="exmodal">
             <div class="modal2">
@@ -650,14 +650,145 @@
                 <h3>Modal Title</h3>
                 <p>Body text goes here.</p>
                 <div id="modbtns">
-                    <button type= "button" onclick=closeModal() id="close "class="close" >Close</button>
-                    <button type= "button"  class="save" >Save</button>
-                </div>
-                
+                    <button type= "button" onclick=closeModal() id="close modbtnss"class="close" >Close</button>
+                    <button type= "button"  class="save" id="modbtnss" >Save</button>
+                </div>               
             </div>
             <button onclick=drop() id="modbtn" class="modbtn" >Modal</button>
         <!-- </div> -->
+        
 
+        <!-- Example Code-------- -->
+        <div class="code">
+            <div class="grid8">
+                <div class="html">
+                    <h3>HTML for Modal</h3>
+                    <pre>
+                        &lt;div id="modal" class="modal">
+                          &lt;h3>Modal Title&lt;/h3>
+                          &lt;p>Body text goes here.&lt;/p>
+                            &lt;div id="modbtns">
+                                &lt;button type= "button" onclick=closeModal() id="close modbtnss"class="close" >Close&lt;/button>
+                                &lt;button type= "button"  class="save" id="modbtnss" >Save&lt;/button>
+                            &lt;/div>               
+                        &lt;/div>
+                    </pre>
+                    <h3>HTML for button</h3>
+                    <pre>
+                        &lt;button onclick=drop() id="modbtn" class="modbtn" >Modal</button>
+                    </pre>
+                </div>
+                <div class="css">
+                    <h3>CSS for Modal</h3>
+                    <pre>
+                        .modal {
+                            display: none;
+                            position: relative;
+                            z-index: 1;
+                            width: 50vh;
+                            height: 23vh;
+                            background-color: #398632;
+                            border-radius: 15px;
+                            color: white;
+                            position: relative;
+                            top: 15vh;
+                            left: 1vh;
+                          }
+                          
+                          .modal h3 {
+                            padding: 5px;
+                            text-align: center;
+                            font-size: 23px;
+                          }
+                          
+                          .modal p {
+                            position: relative;
+                            font-size: 19px;
+                            left: 2%;
+                          }
+                          
+                          .modal .close {
+                            width: 10vh;
+                            height: 4vh;
+                            background-color: #aaaaaa;
+                            color: white;
+                            border-style: solid;
+                            border-color: transparent;
+                            border-radius: 10px;
+                            position: relative;
+                            bottom: 1vh;
+                          }
+                          
+                          .modal .save {
+                            width: 10vh;
+                            height: 4vh;
+                            background-color: white;
+                            color: #398632;
+                            border-style: solid;
+                            border-color: transparent;
+                            border-radius: 10px;
+                            position: relative;
+                            bottom: 1vh;
+                          }
+                          
+                          .modal .save:hover {
+                           
+                            filter: brightness(70%);
+                            cursor: pointer;
+                          }
+                          
+                          .modal .close:hover {
+                            
+                            filter: brightness(70%);
+                            cursor: pointer;
+                          }
+                          
+                          #modbtns {
+                            position: relative;
+                            bottom: 1vh;
+                            top: 7vh;
+                            left: 28vh;
+                          }
+                          
+                    </pre>
+                    <h3>CSS for button</h3>
+                    <pre>
+                        .modbtn {
+                            width: 10vh;
+                            height: 4vh;
+                            background-color: #4457ff;
+                            color: white;
+                            border-style: solid;
+                            border-color: transparent;
+                            position: relative;
+                            top: 10vh;
+                            left: 1vh;
+                          }
+                          
+                    </pre>
+                </div>
+                <div class="java">
+                    <h3>Javascript</h3>
+                    <pre>
+                        var modal = document.getElementById("modal");
+
+                        var btn = document.getElementById("modbtn");
+
+                        var closed = document.getElementById("close");
+
+                        function drop(){
+                            modal.style.display = "block";
+                            btn.style.display = "none"
+                        }
+
+                        function closeModal() {
+                             modal.style.display = "none";
+                             btn.style.display = "block";
+                        }
+                    </pre>
+                </div>
+            </div>
+        </div>
 
 
 
