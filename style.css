@@ -773,7 +773,7 @@ input {
 
 .modal {
   display: none;
-  position: fixed;
+  position: relative;
   z-index: 1;
   width: 50vh;
   height: 23vh;

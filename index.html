@@ -646,16 +646,16 @@
         <h2>Modal in Live Mode</h2>
 
         <!-- <div class="livemodal"> -->
-            <div class="modal">
+            <div id="modal" class="modal">
                 <h3>Modal Title</h3>
                 <p>Body text goes here.</p>
                 <div id="modbtns">
-                    <button type= "button"  class="close" >Close</button>
+                    <button type= "button" onclick=closeModal() id="close "class="close" >Close</button>
                     <button type= "button"  class="save" >Save</button>
                 </div>
                 
             </div>
-            <button onclick="drop()" class="modbtn" >Modal</button>
+            <button onclick=drop() id="modbtn" class="modbtn" >Modal</button>
         <!-- </div> -->
 
 
