@@ -57,7 +57,8 @@
                             &lt;title>Document&lt;/title>
                             &lt;link rel="preconnect" href="https://fonts.googleapis.com">
                             &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                            &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+                            &lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" 
+                            rel="stylesheet">
 
                         &lt;/head>
                         &lt;body>
@@ -231,13 +232,11 @@
 
     <div class="navpage" id="navpage">
 
-        <h1 class="header">Navbar</h1>
+        <h1 class="header hed1">Navbar</h1>
 
         
-        <div id="paragraph1">
-                <p>The Herobar is a component you can use to display information and pictures on your 
-                    website. This component is often used as a way to introduce your website to your viewers. It provides you with a header, paragraph, and and image space. In order to use this component, simply copy and paste the HTML and CSS code below and paste into your own CSS and HTML documents
-                </p>
+        <div >
+                <p>The Navbar is one of our most used components. It goes at the very top of the page as the first component you will use. Navbars are often used as a hub for quick links, contact information, and ways to get to different parts of your website. Our Navbar comes with three links and a space to put the title of your website, but you can add more if you wish.</p>
         </div>
 
         <h2>Example</h2>
@@ -274,40 +273,43 @@
                     <h1>CSS code</h1>
                     <pre>
                         .nav {
-                            background-color: #398632;
-                            position: relative;
-                            top: 100px;
-                            left: 240px;
-                            width: 70%;
+                            background-color:$backgroundColor;
+                            position: fixed;
+                            width: 100%;
                             height: 10vh;
                             z-index: 5;
-                          }
-                          
-                          .nav ul {
-                            margin: 0px;
-                          }
-                          
-                          .nav li {
-                            display: inline;
-                            position: relative;
-                            top: 40px;
-                            padding: 30px;
-                          }
-                          
-                          .nav a {
-                            color: white;
-                            font-size: 20px;
-                          }
-                          
-                          .nav h1 {
-                            color: white;
-                            text-align: center;
-                            font-size: 35px;
-                            position: relative;
-                            bottom: 60px;
-                            width: 40px;
-                            left: 600px;
-                          }
+                        
+                        
+                            ul {
+                                margin: 0px;
+                            }
+                        
+                        
+                            li {
+                                display: inline;
+                                position: relative;
+                                top:40px;
+                                padding: 30px;
+                            }
+                        
+                            a {
+                                color:$color;
+                                font-size: 20px;
+                            }
+                        
+                            h1    {
+                                 color:$color;
+                                 text-align: center;
+                                 font-size: 35px;
+                                 position: relative;
+                                 bottom:60px;
+                                 width: 40px;
+                                 left: 90vh;
+                            } 
+                            
+                           
+                        
+                        }
                     </pre>
                 </div>
             </div>
@@ -320,7 +322,7 @@
 
     <div class="cardpage" id="cardpage">
         <h1 class="header">Cards</h1>
-        <div class="card">
+        <div class="card2">
             <div class="card-image">
                 <img src= "..." >
                 <p>image goes here</p>
@@ -330,9 +332,10 @@
                 <p>Use this space to place some text.</p>
             </div>
         </div>
-        <p class="para">Cards are a great component to use when you want a small component that displays alot of information. A cards includes an image and a space for text. <br> The picture can be used to show an image of what the text is about. To use this component, copy and paste the code below into your document.</p>
+        
+        <p class="para">Cards are a great component to use when you want a small component that displays alot of information. A cards includes an image and a space for text. <br> The picture can be used to show an image of what the text is about. To use this component, copy and paste the code below into your document. </p>
 
-        <div class="code">
+        <div class="cardcode">
             <div class="grid4">
                 <div class="html">
                     <h1>HTML code</h1>
@@ -425,6 +428,11 @@
                             border-radius: 10px;
                             border-style: solid;
                           }
+
+                              
+                        .btn:hover {
+                            filter: brightness(70%);
+                        }
                     </pre>
                     <h3>CSS for Large size</h3>
                     <pre>
@@ -439,14 +447,14 @@
                     <pre>
                         #md-btn {
                             width: 12vh;
-                            height: 4vh;
+                            height: 4.5vh;
                           }
                     </pre>
                     <h3>CSS for Small size</h3>
                     <pre>
                         #sm-btn {
                             width: 8vh;
-                            height: 3vh;
+                            height: 3.5vh;
                           }
                     </pre>
                 </div>
@@ -643,6 +651,7 @@
     <div class= "modalpage" id="modalpage">
         <h1 class="header">Modal</h1>
         <p class="paragraph" id="para3">A Modal is one of our most special componenets. We used Javascript, HTML, and CSS to create our Modal. It has many uses, such as an alert, a save option, or display a message. Below we have two examples: a still version and a live version of our Modal. </p>
+       
         <h2>Example of a Modal</h2>
         <div class="exmodal">
             <div class="modal2">

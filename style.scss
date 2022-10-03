@@ -2,6 +2,11 @@ $backgroundColor: rgb(57, 134, 50);
 $headingSize: 40px;
 $color: rgb(255, 255, 255);
 
+#home, #comp, #start {
+    width: 100%;
+    height: 100vh;
+}
+
 body{
     margin: 0px;
     font-family: 'Inter', sans-serif;
@@ -24,9 +29,9 @@ p {
 .para {
     font-size: 20px;
     position: relative;
-    left:50vh;
     top:-20vh;
     margin: 0px;
+    text-align: center;
 }
 
 #para2 {
@@ -164,13 +169,15 @@ p {
         color:$backgroundColor;
         position: relative;
         top:10px;
-        width: 60vh;
+        width: 80vh;
         font-size: $headingSize;
     }
 
     #webinfo {
-        width: 60vh;
+        width: 80vh;
         padding: 10px;
+        position: relative;
+        top:20vh;
 
         p {
             font-size: 17px;
@@ -200,9 +207,13 @@ p {
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
+
+    h1  {
+        top:10vh;
+    }
 }
 
-.card {
+.card2 {
     width: 20%;
     height: 35vh;
     background-color:$backgroundColor ;
@@ -210,6 +221,7 @@ p {
     overflow: hidden;
     position: relative;
     left:5vh;
+    top:45vh;
 
     .card-text {
         width:100%;
@@ -303,9 +315,26 @@ p {
     height: 130vh;
     background-color: rgb(255, 255, 255);     
 
-    h1 {
+    .hed1 {
         font-size: $headingSize;
         text-align: center;
+        color:#398632;
+        position: relative;
+        top:10vh;
+    }
+
+    p {
+        text-align: center;
+        padding: 5px;
+        position: relative;
+        top:10vh;
+    }
+
+    h2 {
+        position: relative;
+        left:90vh;
+        top:12vh;
+        font-size: 35px;
     }
       
 }
@@ -358,21 +387,33 @@ p {
     top:200px;
 
     .html {
-        background-color:rgba(163, 163, 163, 0.589);
+        // background-color:rgba(163, 163, 163, 0.589);
         grid-row: span 3;
+        border-style: solid;
+        border-width: .7px;
+        border-color:#aaaaaa;
 
         h1 {
-        color:white;
+        color:$backgroundColor;
         position: relative;
         left:20px;
+        text-align: center;
         top:5px;
 
         }
     }
     .css {
-        background-color:rgba(163, 163, 163, 0.589);
+        // background-color:rgba(163, 163, 163, 0.589);
         background-position: center;
         grid-row: span 3;
+        border-style: solid;
+        border-width: .7px;
+        border-color:#aaaaaa;
+
+        h1{
+            text-align: center;
+            color:$backgroundColor;
+        }
 
        
     }
@@ -418,6 +459,8 @@ p {
     }               
 }
 
+// CARD GRID ////////////////
+
 .grid4 {
     display: grid;
     grid-gap:30px;
@@ -461,6 +504,16 @@ p {
     }
 }
 
+.cardcode{
+    width: 70%;
+    margin:0px;
+    position: relative;
+    left:50vh;
+}
+
+
+// /////////// BUTTON PAGE ///////////////////
+
 .button-page {
     width: 100%;
     height: 120vh;
@@ -476,7 +529,9 @@ p {
         position: relative;
         top:9vh;
         left:35%;
-        padding: 5px;
+        padding: 5px, 0px, 0px, 0px;
+        width: 100vh;
+        margin: 0;
         
         ul {
             display: inline;
@@ -509,12 +564,12 @@ p {
 
 #md-btn {
         width:12vh;
-        height: 4vh;
+        height: 4.5vh;
     }
 
 #sm-btn {
         width: 8vh;
-        height: 3vh;
+        height: 3.5vh;
     }
 
 #buttoncode {
@@ -526,13 +581,17 @@ p {
         display: grid;
         grid-gap:30px;
         grid-template-columns: repeat(2, auto);
-        grid-template-rows:repeat(3, 20vh);
+        grid-template-rows:repeat(4, 20vh);
         // border-radius: 20px;
         overflow: hidden;
         position: relative;
+
+        pre {
+            font-size: 11px;
+        }
         
         .html {
-            grid-row: span 2;
+            grid-row: span 3;
             grid-column: span 1;
             border-style: solid;
             border-color: rgb(221, 221, 221);
@@ -564,6 +623,8 @@ p {
             position: relative;
             left:10vh;
         }
+
+        
 }
 .formpage {
     width: 100%;
@@ -615,7 +676,7 @@ input {
     // border-radius: 20px;
     overflow: hidden;
     position: relative;
-    left:20%;
+    left:15%;
     
     .html {
         grid-row: span 2;
@@ -654,6 +715,9 @@ input {
 #formcode {
     position: relative;
     top:15vh;
+    margin:0;
+    
+    
 }
 
 .gridpage {
@@ -948,7 +1012,7 @@ input {
     display: grid;
     width: 100%;
     grid-gap:30px;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows:repeat(4, 20vh);
     
     // border-radius: 20px;
@@ -964,6 +1028,7 @@ input {
     }
 
     .html {
+       
         grid-row: span 2;
         grid-column: span 2;
         border-style: solid;
@@ -975,7 +1040,7 @@ input {
     }
     .css {
         grid-row: span 4;
-        grid-column: span 2;
+        grid-column: span 1;
         border-style: solid;
         border-color:#868686;
         border-width: .7px;
@@ -990,7 +1055,7 @@ input {
 
     .css2 {
         grid-row: span 2;
-        grid-column: span 2;
+        grid-column: span 1;
         border-style: solid;
         border-color:#868686;
         border-width: .7px;
@@ -998,7 +1063,7 @@ input {
 
     .java {
         grid-row: span 2;
-        grid-column: span 2;
+        grid-column: span 1;
         border-style: solid;
         border-width: .7px;
         border-color:#aaaaaa;

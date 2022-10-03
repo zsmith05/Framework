@@ -1,3 +1,8 @@
+#home, #comp, #start {
+  width: 100%;
+  height: 100vh;
+}
+
 body {
   margin: 0px;
   font-family: 'Inter', sans-serif;
@@ -19,9 +24,9 @@ p {
 .para {
   font-size: 20px;
   position: relative;
-  left: 50vh;
   top: -20vh;
   margin: 0px;
+  text-align: center;
 }
 
 #para2 {
@@ -156,13 +161,15 @@ p {
   color: #398632;
   position: relative;
   top: 10px;
-  width: 60vh;
+  width: 80vh;
   font-size: 40px;
 }
 
 .comp #webinfo {
-  width: 60vh;
+  width: 80vh;
   padding: 10px;
+  position: relative;
+  top: 20vh;
 }
 
 .comp #webinfo p {
@@ -192,7 +199,11 @@ p {
   background-color: white;
 }
 
-.card {
+.cardpage h1 {
+  top: 10vh;
+}
+
+.card2 {
   width: 20%;
   height: 35vh;
   background-color: #398632;
@@ -200,16 +211,17 @@ p {
   overflow: hidden;
   position: relative;
   left: 5vh;
+  top: 45vh;
 }
 
-.card .card-text {
+.card2 .card-text {
   width: 100%;
   height: 10vh;
   text-align: center;
   color: white;
 }
 
-.card .card-image {
+.card2 .card-image {
   background-color: gray;
   height: 23vh;
   text-align: center;
@@ -287,9 +299,26 @@ p {
   background-color: white;
 }
 
-.navpage h1 {
+.navpage .hed1 {
   font-size: 40px;
   text-align: center;
+  color: #398632;
+  position: relative;
+  top: 10vh;
+}
+
+.navpage p {
+  text-align: center;
+  padding: 5px;
+  position: relative;
+  top: 10vh;
+}
+
+.navpage h2 {
+  position: relative;
+  left: 90vh;
+  top: 12vh;
+  font-size: 35px;
 }
 
 .nav {
@@ -342,21 +371,31 @@ p {
 }
 
 .grid3 .html {
-  background-color: rgba(163, 163, 163, 0.589);
   grid-row: span 3;
+  border-style: solid;
+  border-width: .7px;
+  border-color: #aaaaaa;
 }
 
 .grid3 .html h1 {
-  color: white;
+  color: #398632;
   position: relative;
   left: 20px;
+  text-align: center;
   top: 5px;
 }
 
 .grid3 .css {
-  background-color: rgba(163, 163, 163, 0.589);
   background-position: center;
   grid-row: span 3;
+  border-style: solid;
+  border-width: .7px;
+  border-color: #aaaaaa;
+}
+
+.grid3 .css h1 {
+  text-align: center;
+  color: #398632;
 }
 
 .herobar {
@@ -441,6 +480,13 @@ p {
   text-align: center;
 }
 
+.cardcode {
+  width: 70%;
+  margin: 0px;
+  position: relative;
+  left: 50vh;
+}
+
 .button-page {
   width: 100%;
   height: 120vh;
@@ -455,7 +501,9 @@ p {
   position: relative;
   top: 9vh;
   left: 35%;
-  padding: 5px;
+  padding: 5px, 0px, 0px, 0px;
+  width: 100vh;
+  margin: 0;
 }
 
 .buttons ul {
@@ -486,12 +534,12 @@ p {
 
 #md-btn {
   width: 12vh;
-  height: 4vh;
+  height: 4.5vh;
 }
 
 #sm-btn {
   width: 8vh;
-  height: 3vh;
+  height: 3.5vh;
 }
 
 #buttoncode {
@@ -505,14 +553,18 @@ p {
   grid-gap: 30px;
   -ms-grid-columns: (auto)[2];
       grid-template-columns: repeat(2, auto);
-  -ms-grid-rows: (20vh)[3];
-      grid-template-rows: repeat(3, 20vh);
+  -ms-grid-rows: (20vh)[4];
+      grid-template-rows: repeat(4, 20vh);
   overflow: hidden;
   position: relative;
 }
 
+.grid5 pre {
+  font-size: 11px;
+}
+
 .grid5 .html {
-  grid-row: span 2;
+  grid-row: span 3;
   grid-column: span 1;
   border-style: solid;
   border-color: #dddddd;
@@ -592,7 +644,7 @@ input {
       grid-template-rows: repeat(2, 20vh);
   overflow: hidden;
   position: relative;
-  left: 20%;
+  left: 15%;
 }
 
 .grid6 .html {
@@ -627,6 +679,7 @@ input {
 #formcode {
   position: relative;
   top: 15vh;
+  margin: 0;
 }
 
 .gridpage {
@@ -906,8 +959,8 @@ input {
   display: grid;
   width: 100%;
   grid-gap: 30px;
-  -ms-grid-columns: (auto)[4];
-      grid-template-columns: repeat(4, auto);
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
   -ms-grid-rows: (20vh)[4];
       grid-template-rows: repeat(4, 20vh);
 }
@@ -931,7 +984,7 @@ input {
 
 .grid8 .css {
   grid-row: span 4;
-  grid-column: span 2;
+  grid-column: span 1;
   border-style: solid;
   border-color: #868686;
   border-width: .7px;
@@ -940,7 +993,7 @@ input {
 
 .grid8 .css2 {
   grid-row: span 2;
-  grid-column: span 2;
+  grid-column: span 1;
   border-style: solid;
   border-color: #868686;
   border-width: .7px;
@@ -948,7 +1001,7 @@ input {
 
 .grid8 .java {
   grid-row: span 2;
-  grid-column: span 2;
+  grid-column: span 1;
   border-style: solid;
   border-width: .7px;
   border-color: #aaaaaa;
