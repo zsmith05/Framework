@@ -2,9 +2,9 @@ $backgroundColor: rgb(57, 134, 50);
 $headingSize: 40px;
 $color: rgb(255, 255, 255);
 
-* {
-    outline: 2px solid red;
-}
+// * {
+//     outline: 2px solid red;
+// }
 
 #home, #comp, #start {
     width: 100%;
@@ -116,7 +116,7 @@ p {
 
      .grid {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(4, 35vh);
         grid-template-rows:repeat(3, 20vh);
         border-radius: 20px;
         overflow: hidden;
@@ -124,6 +124,7 @@ p {
         .main-sec1 {
             background-color:$backgroundColor;
             grid-row: span 3;
+            grid-column: span 2;
             color:white;
 
             h1 {
@@ -141,6 +142,8 @@ p {
             background-image:url(images/four-leaf-clovers-jpg.jpeg) ;
             background-position: center;
             grid-row: span 3;
+            grid-column: span 2;
+
         }
     }
 
@@ -171,8 +174,15 @@ p {
         font-size: $headingSize;
     }
 
+    h2 {
+        font-weight: bold;
+        color:#398632;
+    }
+
 
 }
+
+
 
 .comp {
     width: 100%;
@@ -702,6 +712,8 @@ p {
     .exforms {
         position: relative;
         top:10vh;
+        left:3vh;
+
        
     }
 
@@ -709,9 +721,8 @@ p {
         position: relative;
         justify-content: center;
         align-items: center;
-        // left:10%;
         top:20vh;
-        
+        left:3vh;
     }
 
     label {
@@ -905,6 +916,7 @@ input {
         top:10vh;
         left:1vh;
         color: $backgroundColor;
+        width:60vh;
         
     }
 }
@@ -913,6 +925,7 @@ input {
     position: relative;
     left:76vh;
     top:20vh;
+    width:70vh;
    
 
 }
@@ -1064,6 +1077,7 @@ input {
     position: relative;
     left:55vh;
     top:-30vh;
+    width: 60vh;
 }
 
 .gridcode {
@@ -1099,6 +1113,7 @@ input {
         border-style: solid;
         border-width: .7px;
         border-color:#aaaaaa;
+        width:9ß0vh;
         // background-color:#39863275;
 
       
@@ -1144,6 +1159,14 @@ input {
 @media only screen and (max-width:2050px) {
    
 }
-   
+
+// TABLET DESIGN ///////////////////////
+
+@media only screen and (max-width: 768) {
+    p {
+        color:#398632;
+    }
+}
+    
 
 
