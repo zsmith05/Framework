@@ -1,0 +1,45 @@
+.main-herobar{
+    position: relative;
+    justify-content: center;
+    top:170px;
+    left:270px;
+    width: 70%;
+    height: 200px;
+    
+
+     .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 35vh);
+        grid-template-rows:repeat(3, 20vh);
+        border-radius: 20px;
+        overflow: hidden;
+
+        .main-sec1 {
+            background-color:$backgroundColor;
+            grid-row: span 3;
+            grid-column: span 2;
+            color:white;
+
+            h1 {
+            color:white;
+            position: relative;
+            // left:30px;
+            top:20px;
+            text-align: center;
+
+            }
+            p {
+                padding:10px;
+            }
+        }
+        .main-sec2 {
+            background-image:url(images/four-leaf-clovers-jpg.jpeg) ;
+            background-position: center;
+            grid-row: span 3;
+            grid-column: span 2;
+
+        }
+    }
+
+
+}

@@ -73,6 +73,7 @@ p {
 .navvy a {
   color: white;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .navvy h1 {
@@ -1072,6 +1073,9 @@ input {
 }
 
 @media only screen and (max-width: 1440px) {
+  pre {
+    font-size: 11px;
+  }
   .main-herobar {
     position: relative;
     -webkit-box-pack: center;
@@ -1141,9 +1145,22 @@ input {
     font-weight: bold;
     color: #398632;
   }
+  .comp #webinfo {
+    width: 80vh;
+    padding: 10px;
+    position: relative;
+    top: 40vh;
+  }
+  .comp #links {
+    position: relative;
+    left: 80%;
+    top: 4vh;
+    width: 30vh;
+    margin: 0px;
+  }
   .heropage h1 {
     position: relative;
-    left: 5vh;
+    left: 8vh;
   }
   .heropage #paragraph1 {
     width: 100vh;
@@ -1152,6 +1169,274 @@ input {
     left: 35vh;
   }
   .heropage #ex {
+    left: 8vh;
+    top: 11vh;
+  }
+  .herobar {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 10vh;
+    left: 270px;
+    width: 70%;
+    height: 200px;
+  }
+  .code1 {
+    position: relative;
+    top: -17vh;
+    left: 28vh;
+  }
+  .code1 .grid2 pre {
+    font-size: 11px;
+  }
+  .navpage {
+    width: 100%;
+    height: 130vh;
+    background-color: white;
+  }
+  .navpage .hed1 {
+    font-size: 40px;
+    text-align: center;
+    color: #398632;
+    position: relative;
+    top: 10vh;
+    left: 8vh;
+  }
+  .navpage p {
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    top: 10vh;
+    left: 3vh;
+  }
+  .navpage h2 {
+    position: relative;
+    left: 80vh;
+    top: 12vh;
+    font-size: 35px;
+    width: 30vh;
+  }
+  .nav {
+    background-color: #398632;
+    position: relative;
+    top: 100px;
+    left: 240px;
+    width: 75%;
+    height: 10vh;
+    z-index: 5;
+  }
+  .nav ul {
+    margin: 0px;
+  }
+  .nav li {
+    display: inline;
+    position: relative;
+    top: 40px;
+    padding: 30px;
+  }
+  .nav a {
+    color: white;
+    font-size: 20px;
+  }
+  .nav h1 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    bottom: 60px;
+    width: 40px;
+    left: 50vh;
+  }
+  .grid5 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (23vh)[4];
+        grid-template-rows: repeat(4, 23vh);
+    overflow: hidden;
+    position: relative;
+  }
+  .grid5 pre {
+    font-size: 11px;
+  }
+  .grid5 .html {
+    grid-row: span 3;
+    grid-column: span 1;
+    border-style: solid;
+    border-color: #dddddd;
+  }
+  .grid5 .html h1 {
+    color: #398632;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    text-align: center;
+  }
+  .grid5 .css {
+    grid-row: span 3;
+    grid-column: span 1;
+    border-style: solid;
+    border-color: #dddddd;
+  }
+  .grid5 .css h1 {
+    color: #398632;
+    text-align: center;
+    position: relative;
+    left: -2vh;
+  }
+  .grid5 h3 {
+    position: relative;
+    left: 10vh;
+  }
+  .button-page {
+    width: 100%;
+    height: 120vh;
+    background-color: white;
+  }
+  .button-page h1 {
+    position: relative;
+    left: 8vh;
+  }
+  .button-page #para2 {
+    text-align: center;
+    left: 8vh;
+  }
+  .buttons {
+    position: relative;
+    top: 9vh;
+    left: 38%;
+    padding: 5px, 0px, 0px, 0px;
+    width: 100vh;
+    margin: 0;
+  }
+  .buttons ul {
+    display: inline;
+  }
+  .buttons li {
+    padding: 0.5%;
+    display: inline;
+  }
+  .formpage {
+    width: 100%;
+    height: 105vh;
+    background-color: white;
+  }
+  .formpage .header {
+    position: relative;
+    left: 7vh;
+  }
+  .formpage #para2 {
+    position: relative;
+    left: 7vh;
+  }
+  .formpage #exinfo {
+    position: relative;
+    left: 60vh;
+    width: 70vh;
+  }
+  .formpage .exforms {
+    position: relative;
+    top: 10vh;
+    left: 3vh;
+  }
+  .formpage .forms {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 20vh;
+    left: 3vh;
+  }
+  .formpage label {
+    display: block;
+  }
+  .gridpage {
+    width: 100%;
+    height: 175vh;
+    background-color: white;
+  }
+  .grid7 {
+    display: -ms-grid;
+    display: grid;
+    width: 70%;
+    grid-gap: 30px;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (20vh)[3];
+        grid-template-rows: repeat(3, 20vh);
+    position: relative;
+    top: 25vh;
+    left: -2vh;
+  }
+  .grid7 .html {
+    grid-row: span 3;
+    grid-column: span 1;
+    border-style: solid;
+    border-width: .7px;
+    border-color: #aaaaaa;
+  }
+  .grid7 .html h1 {
+    color: #398632;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    text-align: center;
+  }
+  .grid7 .css {
+    grid-row: span 3;
+    grid-column: span 1;
+    border-style: solid;
+    border-color: #868686;
+    border-width: .7px;
+    position: relative;
+  }
+  .grid7 .css h1 {
+    text-align: center;
+    color: #398632;
+  }
+  .modalpage {
+    width: 100%;
+    height: 108vh;
+    background-color: white;
+  }
+  .modalpage h2 {
+    position: relative;
+    top: 10vh;
+    left: 1vh;
+    color: #398632;
+    width: 60vh;
+  }
+  .modalpage h1 {
+    position: relative;
+    left: 8vh;
+  }
+  .modalpage #para3 {
+    position: relative;
+    padding: 5px;
+    top: 7vh;
+    text-align: center;
+    left: 7vh;
+  }
+  .cardpage {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+  }
+  .cardpage h1 {
+    top: 10vh;
+  }
+  .cardpage .header {
+    position: relative;
+    left: 8vh;
+  }
+  .cardpage .para {
+    position: relative;
     left: 8vh;
   }
 }

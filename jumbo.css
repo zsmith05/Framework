@@ -1,0 +1,65 @@
+.main-herobar {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 170px;
+    left: 270px;
+    width: 70%;
+    height: 200px;
+    
+  }
+  
+  .main-herobar .grid {
+  
+    display: grid;  
+    grid-template-columns: repeat(4, 35vh);
+    grid-template-rows: repeat(3, 20vh);
+    border-radius: 20px;
+    overflow: hidden;
+    border-color:#398632 ;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 20px 20px 5px 8px rgb(190, 190, 190);
+    
+
+}
+  
+  .main-herobar .grid .main-sec1 {
+    background-color: #ffffff;
+    grid-row: span 3;
+    grid-column: span 2;
+    color: white;
+    
+  }
+  
+  .main-herobar .grid .main-sec1 h1 {
+    color:  #398632;
+    position: relative;
+    top: 20px;
+    padding: 10px;
+  }
+  
+  .main-herobar .grid .main-sec1 p {
+    padding: 10px;
+    color: black;
+  }
+  
+  .main-herobar .grid .main-sec2 {
+    background-image: url(four-leaf-clovers-jpg.jpeg);
+    background-position: center;
+    grid-row: span 3;
+    grid-column: span 2;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  
+p {
+    font-size: 17px;
+    line-height: 4vh;
+  }
+  
