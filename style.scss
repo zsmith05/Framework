@@ -33,7 +33,7 @@ p {
 }
 
 .para {
-    font-size: 20px;
+    font-size: 17px;
     position: relative;
     top:-20vh;
     margin: 0px;
@@ -54,7 +54,7 @@ p {
     border-style: solid;
     border-width: .7px;
     border-color:#aaaaaa;
-    width:85vh;
+    width:89vh;
 
    #textcode {
        color:red;
@@ -122,28 +122,37 @@ p {
         grid-template-rows:repeat(3, 20vh);
         border-radius: 20px;
         overflow: hidden;
+        border-color:#398632 ;
+        border-width: 2px;
+        border-style: solid;
 
         .main-sec1 {
-            background-color:$backgroundColor;
+            background-color:white;
             grid-row: span 3;
             grid-column: span 2;
             color:white;
 
             h1 {
-            color:white;
+            color:$backgroundColor;
             position: relative;
-            // left:30px;
-            top:20px;
-            text-align: center;
+            left:10px;
+            top:8vh;
+            // text-align: center;
 
             }
             p {
                 padding:10px;
+                color:black;
+                position: relative;
+                top:8vh;
+                // text-align: center;
+
             }
         }
         .main-sec2 {
-            background-image:url(images/four-leaf-clovers-jpg.jpeg) ;
+            background-image:url(images/700e512f-e0d6-4742-b237-e99ce0d68c10.png) ;
             background-position: center;
+            background-repeat: no-repeat;
             grid-row: span 3;
             grid-column: span 2;
 
@@ -163,11 +172,12 @@ p {
         position: relative;
         top:50px;
         margin:10px;
+        left:1vh;
 
         #step4 {
             position: relative;
             left:100vh;
-            top:-87vh;
+            top:-95vh;
             width: 60vh;
         }
     }
@@ -211,6 +221,9 @@ p {
         p {
             font-size: 17px;
             line-height: 4vh;
+            position: relative;
+            top:3vh;
+            left:1vh;
         }
     }
 
@@ -243,6 +256,7 @@ p {
             text-decoration: underline;
             
         }
+        
     }
 }
 
@@ -284,7 +298,7 @@ p {
 
 .heropage {
     width: 100%;
-    height: 200vh;
+    height: 210vh;
     background-color: rgb(255, 255, 255);
 
     h1 {
@@ -341,7 +355,7 @@ p {
 
     .html {
         // background-color:rgba(163, 163, 163, 0.589);
-        grid-row: span 3;
+        grid-row: span 4;
         border-style: solid;
         border-width: .7px;
         border-color:#aaaaaa;
@@ -600,7 +614,7 @@ p {
 .buttons {
         position: relative;
         top:9vh;
-        left:35%;
+        left:38%;
         padding: 5px, 0px, 0px, 0px;
         width: 100vh;
         margin: 0;
@@ -1116,7 +1130,7 @@ input {
         border-style: solid;
         border-width: .7px;
         border-color:#aaaaaa;
-        width:9ß0vh;
+        width:90vh;
         // background-color:#39863275;
 
       
@@ -1165,6 +1179,9 @@ input {
 
 // NORMAL DESKTOP ///////////////  1440 * 900
 @media only screen and (max-width:1440px) {
+        * {
+            outline: 2px solid red;
+         }
 
     pre {
         font-size: 11px;
@@ -1184,19 +1201,23 @@ input {
             grid-template-rows:repeat(3, 20vh);
             border-radius: 20px;
             overflow: hidden;
+            border-color:#398632 ;
+            border-width: 2px;
+            border-style: solid;
+    
     
             .main-sec1 {
-                background-color:$backgroundColor;
+                background-color:white;
                 grid-row: span 3;
                 grid-column: span 2;
                 color:white;
     
                 h1 {
-                color:white;
+                color:$backgroundColor;
                 position: relative;
                 // left:30px;
                 top:20px;
-                text-align: center;
+                
     
                 }
                 p {
@@ -1204,7 +1225,7 @@ input {
                 }
             }
             .main-sec2 {
-                background-image:url(images/four-leaf-clovers-jpg.jpeg) ;
+                background-image:url(images/700e512f-e0d6-4742-b237-e99ce0d68c10.png) ;
                 background-position: center;
                 grid-row: span 3;
                 grid-column: span 2;
@@ -1230,7 +1251,7 @@ input {
                 position: relative;
                 left:110vh;
                 top:-100vh;
-                width: 60vh;
+                width: 45vh;
             }
 
             .startcode {
@@ -1275,7 +1296,8 @@ input {
     .heropage {
         h1 {
             position: relative;
-            left:8vh;
+            left:70vh;
+            width:40vh;
         }
 
         #paragraph1 {
@@ -1286,8 +1308,9 @@ input {
         }
 
         #ex {
-            left:8vh;
+            left:70vh;
             top:11vh;
+            width:40vh;
         }
     }
 
@@ -1324,7 +1347,9 @@ input {
             color:#398632;
             position: relative;
             top:10vh;
-            left:8vh;
+            left:70vh;
+            width:40vh;
+            text-align: center;
         }
     
         p {
@@ -1332,7 +1357,8 @@ input {
             padding: 5px;
             position: relative;
             top:10vh;
-            left:3vh;
+            left:45vh;
+            width:90vh;
         }
     
         h2 {
@@ -1340,7 +1366,7 @@ input {
             left:80vh;
             top:12vh;
             font-size: 35px;
-            width:30vh;
+            width:15vh;
         }
           
     }
@@ -1600,6 +1626,72 @@ input {
             left:7vh;
         }
     }
+    .grid8 {
+        display: grid;
+        width: 100%;
+        grid-gap:30px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows:repeat(4, 20vh);
+       
+        
+        // border-radius: 20px;
+        // overflow: hidden;
+    
+        h3 {
+            text-align: center;
+            font-size: 20px;
+            color:$backgroundColor;
+        }
+        code {
+            font-size: 12px;
+            
+        }
+    
+        .html {
+           
+            grid-row: span 2;
+            grid-column: span 2;
+            border-style: solid;
+            border-width: .7px;
+            border-color:#aaaaaa;
+            width:80vh;
+            // background-color:#39863275;
+    
+          
+        }
+        .css {
+            grid-row: span 4;
+            grid-column: span 1;
+            border-style: solid;
+            border-color:#868686;
+            border-width: .7px;
+            // background-color:#39863275;
+            position: relative;
+            // top: -72vh;
+            // left: 95vh;
+    
+    
+           
+        }
+    
+        .css2 {
+            grid-row: span 2;
+            grid-column: span 1;
+            border-style: solid;
+            border-color:#868686;
+            border-width: .7px;
+        }
+    
+        .java {
+            grid-row: span 2;
+            grid-column: span 1;
+            border-style: solid;
+            border-width: .7px;
+            border-color:#aaaaaa;
+        }
+    
+    }
+    
 
     .cardpage {
         width: 100%;
