@@ -219,6 +219,12 @@ p {
   width: 30vh;
 }
 
+.comp #links ul {
+  list-style: none;
+  position: relative;
+  left: -5vh;
+}
+
 .comp #links li {
   padding: 10px;
   font-size: 18px;
@@ -370,6 +376,8 @@ p {
   padding: 5px;
   position: relative;
   top: 10vh;
+  width: 100vh;
+  left: 48vh;
 }
 
 .navpage h2 {
@@ -1611,9 +1619,6 @@ input {
 }
 
 @media only screen and (max-width: 768px) {
-  * {
-    outline: 2px solid red;
-  }
   .html, .css {
     overflow: scroll;
   }
@@ -1663,7 +1668,7 @@ input {
   .navvy {
     background-color: #398632;
     position: fixed;
-    width: 51.5%;
+    width: 100%;
     height: 10vh;
     z-index: 5;
   }
@@ -1818,7 +1823,7 @@ input {
   .comp #links h1 {
     color: #398632;
     width: 30vh;
-    top: -2vh;
+    top: 1vh;
     left: -1vh;
   }
   .comp #links li {
@@ -1994,7 +1999,7 @@ input {
         grid-template-rows: repeat(2, 40vh);
     overflow: hidden;
     position: relative;
-    top: -60vh;
+    top: -55vh;
     left: -20vh;
     width: 50vh;
   }
@@ -2151,7 +2156,7 @@ input {
   }
   .button-page {
     width: 100%;
-    height: 120vh;
+    height: 140vh;
     background-color: white;
   }
   .button-page #para2 {
@@ -2255,18 +2260,32 @@ input {
   }
   .formpage {
     width: 100%;
-    height: 100vh;
+    height: 160vh;
     background-color: white;
+  }
+  .formpage .header {
+    position: relative;
+    left: 10vh;
+    top: 10vh;
+  }
+  .formpage #para2 {
+    position: relative;
+    left: 7vh;
+    width: 65vh;
+    top: 10vh;
   }
   .formpage #exinfo {
     position: relative;
-    left: 60vh;
-    width: 70vh;
+    left: 40vh;
+    width: 30vh;
+    height: 20vh;
+    top: 20vh;
   }
   .formpage .exforms {
     position: relative;
-    top: 10vh;
+    top: 20vh;
     left: 3vh;
+    width: 50vh;
   }
   .formpage .forms {
     position: relative;
@@ -2278,6 +2297,7 @@ input {
             align-items: center;
     top: 20vh;
     left: 3vh;
+    width: 50vh;
   }
   .formpage label {
     display: block;
@@ -2293,13 +2313,14 @@ input {
     display: -ms-grid;
     display: grid;
     grid-gap: 30px;
-    -ms-grid-columns: (auto)[2];
-        grid-template-columns: repeat(2, auto);
+    -ms-grid-columns: (40vh)[1];
+        grid-template-columns: repeat(1, 40vh);
     -ms-grid-rows: (20vh)[2];
         grid-template-rows: repeat(2, 20vh);
     overflow: hidden;
     position: relative;
-    left: 15%;
+    left: -15vh;
+    top: 10vh;
   }
   .grid6 .html {
     grid-row: span 2;
@@ -2311,7 +2332,7 @@ input {
   .grid6 .html h1 {
     color: #398632;
     position: relative;
-    left: 20px;
+    left: -10vh;
     top: 5px;
     text-align: center;
   }
@@ -2323,8 +2344,10 @@ input {
     border-color: #aaaaaa;
   }
   .grid6 .css h1 {
+    position: relative;
     text-align: center;
     color: #398632;
+    left: -10vh;
   }
   #formcode {
     position: relative;
@@ -2333,7 +2356,7 @@ input {
   }
   .gridpage {
     width: 100%;
-    height: 165vh;
+    height: 230vh;
     background-color: white;
   }
   .gridpage #gridinfo {
@@ -2345,7 +2368,7 @@ input {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    left: 30vh;
+    left: 15vh;
   }
   .gridpage #gridinfo p {
     text-align: center;
@@ -2355,22 +2378,24 @@ input {
   .gridpage #gridinfo h1 {
     position: relative;
     top: 20vh;
+    left: -4vh;
   }
   .gridpage .grid-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto auto;
         grid-template-columns: auto auto auto;
-    gap: 0px;
+    gap: 10px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     position: relative;
     top: 25vh;
+    left: -2vh;
   }
   .gridpage .grid-container .card {
-    width: 100%;
-    height: 35vh;
+    width: 80%;
+    height: 25vh;
     background-color: #398632;
     border-radius: 15px;
     overflow: hidden;
@@ -2393,13 +2418,13 @@ input {
     display: grid;
     width: 70%;
     grid-gap: 30px;
-    -ms-grid-columns: (auto)[2];
-        grid-template-columns: repeat(2, auto);
+    -ms-grid-columns: (50vh)[1];
+        grid-template-columns: repeat(1, 50vh);
     -ms-grid-rows: (20vh)[3];
         grid-template-rows: repeat(3, 20vh);
     position: relative;
     top: 25vh;
-    left: 10vh;
+    left: -20vh;
   }
   .grid7 .html {
     grid-row: span 3;
@@ -2411,7 +2436,7 @@ input {
   .grid7 .html h1 {
     color: #398632;
     position: relative;
-    left: 20px;
+    left: -10vh;
     top: 5px;
     text-align: center;
   }
@@ -2424,8 +2449,10 @@ input {
     position: relative;
   }
   .grid7 .css h1 {
+    position: relative;
     text-align: center;
     color: #398632;
+    left: -10vh;
   }
   .modalpage {
     width: 100%;
@@ -2439,11 +2466,23 @@ input {
     color: #398632;
     width: 60vh;
   }
+  .modalpage h1 {
+    position: relative;
+    left: 6vh;
+  }
+  .modalpage #para3 {
+    position: relative;
+    padding: 5px;
+    top: 7vh;
+    left: 6vh;
+    text-align: center;
+    width: 60vh;
+  }
   .exmodal {
     position: relative;
     left: 70vh;
     top: 20vh;
-    width: 20vh;
+    width: 2vh;
   }
   .modal2 {
     width: 50vh;
@@ -2454,6 +2493,7 @@ input {
     position: relative;
     right: 75vh;
     bottom: 10vh;
+    left: -69vh;
   }
   .modal2 h3 {
     padding: 5px;
@@ -2540,6 +2580,7 @@ input {
     bottom: 1vh;
     top: 7vh;
     left: 28vh;
+    width: 30vh;
   }
   .modbtn {
     width: 10vh;
@@ -2557,21 +2598,16 @@ input {
             filter: brightness(70%);
     cursor: pointer;
   }
-  #para3 {
-    position: relative;
-    padding: 5px;
-    top: 7vh;
-    text-align: center;
-  }
   #codelabel {
     position: relative;
-    left: 2vh;
+    left: 20vh;
     top: 17vh;
-    width: 60vh;
+    width: 50vh;
+    font-size: 28px;
   }
   .gridcode {
     position: relative;
-    left: 2vh;
+    left: 15vh;
     top: 20vh;
   }
   .grid8 {
@@ -2621,6 +2657,125 @@ input {
     border-style: solid;
     border-width: .7px;
     border-color: #aaaaaa;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #home, #comp, #start {
+    width: 100%;
+    height: 130vh;
+  }
+  .heropage {
+    width: 100%;
+    height: 250vh;
+    background-color: white;
+  }
+  .heropage h1 {
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    left: 20vh;
+  }
+  .heropage #paragraph1 {
+    width: 70%;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    top: 100px;
+    left: 13vh;
+  }
+  .heropage #ex {
+    text-align: center;
+    position: relative;
+    top: 14vh;
+    font-size: 40px;
+    left: 20vh;
+  }
+  .navpage {
+    width: 100%;
+    height: 150vh;
+    background-color: white;
+  }
+  .navpage .hed1 {
+    font-size: 40px;
+    text-align: center;
+    color: #398632;
+    position: relative;
+    top: -60vh;
+    left: 20vh;
+  }
+  .navpage p {
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    top: -60vh;
+    width: 60vh;
+    left: 10vh;
+  }
+  .navpage h2 {
+    position: relative;
+    left: 30vh;
+    top: -60vh;
+    font-size: 35px;
+    width: 30vh;
+  }
+  .navpage .grid3 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+    -ms-grid-columns: (50vh)[1];
+        grid-template-columns: repeat(1, 50vh);
+    -ms-grid-rows: (40vh)[2];
+        grid-template-rows: repeat(2, 40vh);
+    overflow: hidden;
+    position: relative;
+    top: -55vh;
+    left: -20vh;
+    width: 50vh;
+  }
+  .navpage .grid3 .html {
+    grid-row: span 1;
+    border-style: solid;
+    border-width: .7px;
+    border-color: #aaaaaa;
+    overflow-y: scroll;
+    position: relative;
+  }
+  .navpage .grid3 .html h1 {
+    color: #398632;
+    position: relative;
+    left: 20px;
+    text-align: center;
+    top: 5px;
+  }
+  .navpage .grid3 .css {
+    background-position: center;
+    grid-row: span 1;
+    border-style: solid;
+    border-width: .7px;
+    border-color: #aaaaaa;
+    overflow-y: scroll;
+  }
+  .navpage .grid3 .css h1 {
+    text-align: center;
+    color: #398632;
+  }
+  .cardpage {
+    width: 100%;
+    height: 130vh;
+    background-color: white;
+  }
+  .cardpage .header {
+    position: relative;
+    top: -50vh;
+    left: 20vh;
+  }
+  .cardpage .para {
+    position: relative;
+    left: 10vh;
+    width: 60vh;
+    top: -80vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
