@@ -1,4 +1,4 @@
-#home, #comp, #start {
+#home, #start {
   width: 100%;
   height: 100vh;
 }
@@ -177,7 +177,7 @@ p {
 
 .comp {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: white;
   margin: 0px;
 }
@@ -1062,7 +1062,6 @@ input {
   border-style: solid;
   border-width: .7px;
   border-color: #aaaaaa;
-  width: 90vh;
 }
 
 .grid8 .css {
@@ -2665,6 +2664,130 @@ input {
     width: 100%;
     height: 130vh;
   }
+  * {
+    outline: 2px solid red;
+  }
+  .navvy {
+    background-color: #398632;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    z-index: 5;
+  }
+  .navvy ul {
+    margin: 0px;
+    position: relative;
+    left: -4vh;
+  }
+  .navvy li {
+    display: inline;
+    position: relative;
+    top: 4vh;
+    padding: 10px;
+    font-size: 10px;
+  }
+  .navvy a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  .navvy h1 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    bottom: 7vh;
+    width: 4vh;
+    left: 31vh;
+  }
+  .start {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    margin: 0px;
+  }
+  .start #items {
+    position: relative;
+    top: 50px;
+    margin: 10px;
+    left: 1vh;
+  }
+  .start #items #step4 {
+    position: relative;
+    left: .2vh;
+    top: 5vh;
+    width: 50vh;
+  }
+  .start #items pre {
+    width: 50vh;
+  }
+  .start #items .startcode {
+    width: 50vh;
+    overflow: scroll;
+  }
+  .start h1 {
+    color: #398632;
+    font-size: 40px;
+    width: 50vh;
+  }
+  .start h2 {
+    font-weight: bold;
+    color: #398632;
+  }
+  .comp {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    margin: 0px;
+  }
+  .comp h1 {
+    margin: 0px;
+    color: #398632;
+    position: relative;
+    top: 10vh;
+    width: 50vh;
+    font-size: 40px;
+    text-align: left;
+    left: 1vh;
+  }
+  .comp #webinfo {
+    width: 50vh;
+    padding: 10px;
+    position: relative;
+    top: 20vh;
+  }
+  .comp #webinfo p {
+    font-size: 17px;
+    line-height: 4vh;
+    position: relative;
+    top: 10vh;
+    width: 50vh;
+  }
+  .comp #links {
+    position: relative;
+    left: 4%;
+    top: 30vh;
+    width: 30vh;
+    margin: 0px;
+  }
+  .comp #links h1 {
+    color: #398632;
+    width: 30vh;
+    top: 1vh;
+    left: -1vh;
+  }
+  .comp #links li {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .comp #links a:link {
+    color: black;
+    text-decoration: none;
+  }
+  .comp #links a:hover {
+    color: #398632;
+    text-decoration: underline;
+  }
   .heropage {
     width: 100%;
     height: 250vh;
@@ -2675,7 +2798,7 @@ input {
     text-align: center;
     position: relative;
     top: 10vh;
-    left: 20vh;
+    left: 10vh;
   }
   .heropage #paragraph1 {
     width: 70%;
@@ -2683,14 +2806,165 @@ input {
     font-size: 20px;
     position: relative;
     top: 100px;
-    left: 13vh;
+    left: 9vh;
   }
   .heropage #ex {
     text-align: center;
     position: relative;
-    top: 14vh;
+    top: 22vh;
     font-size: 40px;
-    left: 20vh;
+    left: 10vh;
+  }
+  .herobar {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 200px;
+    left: 6vh;
+    width: 70%;
+    height: 30vh;
+  }
+  .herobar .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (25vh)[2];
+        grid-template-columns: repeat(2, 25vh);
+    -ms-grid-rows: (30vh)[2];
+        grid-template-rows: repeat(2, 30vh);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 30vh;
+    width: 50vh;
+  }
+  .herobar .grid .sec1 {
+    background-color: #398632;
+    grid-row: span 1;
+    grid-column: span 1;
+    color: white;
+  }
+  .herobar .grid .sec1 h1 {
+    color: white;
+    position: relative;
+    left: -7vh;
+    top: -2vh;
+  }
+  .herobar .grid .sec1 p {
+    padding: 10px;
+  }
+  .herobar .grid .sec2 {
+    background-color: gray;
+    background-position: center;
+    grid-row: span 1;
+  }
+  .herobar .grid .sec2 p {
+    text-align: center;
+    position: relative;
+    left: -4vh;
+  }
+  .grid2 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+    -ms-grid-columns: (25vh)[2];
+        grid-template-columns: repeat(2, 25vh);
+    -ms-grid-rows: (20vh)[4];
+        grid-template-rows: repeat(4, 20vh);
+    overflow: hidden;
+    position: relative;
+    top: 400px;
+    width: 50vh;
+    height: 50vh;
+    left: -30vh;
+  }
+  .grid2 .html {
+    grid-row: span 4;
+    border-style: solid;
+    border-width: .7px;
+    border-color: #aaaaaa;
+  }
+  .grid2 .html h1 {
+    position: relative;
+    left: 10px;
+    top: 5px;
+    width: 30vh;
+  }
+  .grid2 .html pre {
+    position: relative;
+    left: -10vh;
+  }
+  .grid2 .css {
+    background-position: center;
+    grid-row: span 4;
+    border-style: solid;
+    border-width: .7px;
+    border-color: #aaaaaa;
+  }
+  .grid2 .css h1 {
+    position: relative;
+    left: 4vh;
+    top: 5px;
+    width: 20vh;
+  }
+  .grid2 .css pre {
+    position: relative;
+    left: -15vh;
+  }
+  .main-herobar {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 25vh;
+    left: 10vh;
+    width: 65%;
+    height: 40vh;
+  }
+  .main-herobar .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (40vh)[1];
+        grid-template-columns: repeat(1, 40vh);
+    -ms-grid-rows: (50vh)[2];
+        grid-template-rows: repeat(2, 50vh);
+    border-radius: 20px;
+    overflow: hidden;
+    border-color: #398632;
+    border-width: 2px;
+    border-style: solid;
+    height: 80vh;
+  }
+  .main-herobar .grid .main-sec1 {
+    background-color: white;
+    grid-row: span 1;
+    color: white;
+  }
+  .main-herobar .grid .main-sec1 h1 {
+    color: #398632;
+    position: relative;
+    left: 10px;
+    top: 1vh;
+  }
+  .main-herobar .grid .main-sec1 p {
+    padding: 10px;
+    color: black;
+    position: relative;
+    top: 2vh;
+  }
+  .main-herobar .grid .main-sec2 {
+    background-image: url(images/How-to-convert-text-into-video.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: span 1;
+  }
+  .code {
+    position: relative;
+    width: 40%;
+    left: 33vh;
+    background-color: transparent;
+    border-width: 5px;
+    margin: 0px;
   }
   .navpage {
     width: 100%;
@@ -2703,19 +2977,19 @@ input {
     color: #398632;
     position: relative;
     top: -60vh;
-    left: 20vh;
+    left: 10vh;
   }
   .navpage p {
     text-align: center;
     padding: 5px;
     position: relative;
     top: -60vh;
-    width: 60vh;
-    left: 10vh;
+    width: 50vh;
+    left: 3vh;
   }
   .navpage h2 {
     position: relative;
-    left: 30vh;
+    left: 20vh;
     top: -60vh;
     font-size: 35px;
     width: 30vh;
@@ -2731,7 +3005,7 @@ input {
     overflow: hidden;
     position: relative;
     top: -55vh;
-    left: -20vh;
+    left: -27vh;
     width: 50vh;
   }
   .navpage .grid3 .html {
@@ -2761,21 +3035,281 @@ input {
     text-align: center;
     color: #398632;
   }
+  .nav {
+    background-color: #398632;
+    position: relative;
+    top: -60vh;
+    left: 10vh;
+    width: 80%;
+    height: 10vh;
+    z-index: 5;
+  }
+  .nav ul {
+    margin: 0px;
+    position: relative;
+    left: -5vh;
+    top: -1vh;
+  }
+  .nav li {
+    display: inline;
+    position: relative;
+    top: 40px;
+    padding: 10px;
+  }
+  .nav a {
+    color: white;
+    font-size: 15px;
+  }
+  .nav h1 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 52px;
+    width: 40px;
+    left: 20vh;
+  }
   .cardpage {
     width: 100%;
-    height: 130vh;
+    height: 140vh;
     background-color: white;
   }
   .cardpage .header {
     position: relative;
     top: -50vh;
-    left: 20vh;
+    left: 10vh;
   }
   .cardpage .para {
     position: relative;
-    left: 10vh;
-    width: 60vh;
+    left: 5vh;
+    width: 50vh;
     top: -80vh;
+  }
+  .card2 {
+    width: 60%;
+    height: 35vh;
+    background-color: #398632;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    left: 12vh;
+    top: -10vh;
+  }
+  .card2 .card-text {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    color: white;
+  }
+  .card2 .card-image {
+    background-color: gray;
+    height: 23vh;
+    text-align: center;
+  }
+  .grid4 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+    -ms-grid-columns: (40vh)[1];
+        grid-template-columns: repeat(1, 40vh);
+    -ms-grid-rows: (20vh)[2];
+        grid-template-rows: repeat(2, 20vh);
+    overflow: hidden;
+    position: relative;
+    left: -6vh;
+  }
+  .grid4 .html {
+    grid-row: span 2;
+    grid-column: span 1;
+    border-style: solid;
+    border-color: #dddddd;
+  }
+  .grid4 .html h1 {
+    color: #398632;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    text-align: center;
+  }
+  .grid4 .css {
+    grid-row: span 2;
+    grid-column: span 1;
+    border-style: solid;
+    border-color: #dddddd;
+  }
+  .grid4 .css h1 {
+    text-align: center;
+    color: #398632;
+    position: relative;
+    left: -2vh;
+    top: 1vh;
+  }
+  .button-page {
+    width: 100%;
+    height: 150vh;
+    background-color: white;
+  }
+  .button-page #para2 {
+    text-align: center;
+    position: relative;
+    top: 10vh;
+    left: 5vh;
+    width: 50vh;
+  }
+  .button-page h1 {
+    position: relative;
+    left: 10vh;
+    top: 10vh;
+    width: 40vh;
+  }
+  .buttons {
+    position: relative;
+    top: 9vh;
+    left: 10%;
+    padding: 7 px, 0px, 0px, 0px;
+    width: 50vh;
+    margin: 0;
+  }
+  .buttons ul {
+    display: inline;
+  }
+  .buttons li {
+    padding: 0.5%;
+    display: inline;
+  }
+  .grid5 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+    -ms-grid-columns: (40vh)[1];
+        grid-template-columns: repeat(1, 40vh);
+    -ms-grid-rows: (20vh)[4];
+        grid-template-rows: repeat(4, 20vh);
+    overflow: hidden;
+    position: relative;
+    width: 40vh;
+    position: relative;
+    left: -5vh;
+  }
+  .grid5 pre {
+    font-size: 11px;
+  }
+  .grid5 .html {
+    grid-row: span 2;
+    grid-column: span 1;
+    border-style: solid;
+    border-color: #dddddd;
+  }
+  .grid5 .html h1 {
+    color: #398632;
+    position: relative;
+    left: 2px;
+    top: 5px;
+    text-align: center;
+  }
+  .grid5 .css {
+    grid-row: span 2;
+    grid-column: span 1;
+    border-style: solid;
+    border-color: #dddddd;
+  }
+  .grid5 .css h1 {
+    color: #398632;
+    text-align: center;
+    position: relative;
+    top: 1vh;
+    left: -7vh;
+  }
+  .grid5 h3 {
+    position: relative;
+    left: 10vh;
+  }
+  .formpage {
+    width: 100%;
+    height: 170vh;
+    background-color: white;
+  }
+  .formpage .header {
+    position: relative;
+    left: 5vh;
+    top: 10vh;
+    width: 50vh;
+  }
+  .formpage #para2 {
+    position: relative;
+    left: 5vh;
+    width: 50vh;
+    top: 10vh;
+  }
+  .formpage #exinfo {
+    position: relative;
+    left: 40vh;
+    width: 30vh;
+    height: 20vh;
+    top: 20vh;
+    display: none;
+  }
+  .formpage .exforms {
+    position: relative;
+    top: 17vh;
+    left: 3vh;
+    width: 50vh;
+  }
+  .formpage .forms {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 20vh;
+    left: 3vh;
+    width: 50vh;
+  }
+  .formpage label {
+    display: block;
+  }
+  .grid6 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+    -ms-grid-columns: (50vh)[1];
+        grid-template-columns: repeat(1, 50vh);
+    -ms-grid-rows: (20vh)[2];
+        grid-template-rows: repeat(2, 20vh);
+    overflow: hidden;
+    position: relative;
+    left: -30vh;
+    top: 10vh;
+    width: 50vh;
+  }
+  .grid6 .html {
+    grid-row: span 2;
+    grid-column: span 1;
+    border-style: solid;
+    border-width: .7px;
+    border-color: #aaaaaa;
+  }
+  .grid6 .html h1 {
+    color: #398632;
+    position: relative;
+    left: -10vh;
+    top: 5px;
+    text-align: center;
+  }
+  .grid6 .css {
+    grid-row: span 2;
+    grid-column: span 1;
+    border-style: solid;
+    border-width: .7px;
+    border-color: #aaaaaa;
+  }
+  .grid6 .css h1 {
+    position: relative;
+    text-align: center;
+    color: #398632;
+    left: -10vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
