@@ -118,7 +118,7 @@ p {
 
      .grid {
         display: grid;
-        grid-template-columns: repeat(4, 35vh);
+        grid-template-columns: repeat(4, 25%);
         grid-template-rows:repeat(3, 20vh);
         border-radius: 20px;
         overflow: hidden;
@@ -137,6 +137,7 @@ p {
             position: relative;
             left:10px;
             top:8vh;
+            font-size: 40px;
            
             // text-align: center;
 
@@ -146,6 +147,7 @@ p {
                 color:black;
                 position: relative;
                 top:8vh;
+                font-size: 18px;
                 // text-align: center;
 
             }
@@ -201,7 +203,7 @@ p {
 
 .comp {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     background-color: rgb(255, 255, 255);
     margin: 0px;
 
@@ -512,7 +514,7 @@ p {
     position: relative;
     justify-content: center;
     top:200px;
-    left:270px;
+    left:27vh;
     width: 70%;
     height: 200px;
 
@@ -2105,6 +2107,7 @@ input {
                 padding: 10px;
                 position: relative;
                 top:20vh;
+                
         
                 p {
                     font-size: 17px;
@@ -2117,11 +2120,11 @@ input {
         
             #links {
                 position: relative;
-                left:4%;
+                left:-10%;
                 top:30vh;
                 width: 30vh;
                 margin: 0px;
-                
+               
         
                 h1 {
                     color:$backgroundColor;
@@ -3167,7 +3170,60 @@ input {
 // TABLET DESIGN Landscape ///////////////// 1024 * 768
 
 @media only screen and (max-width: 1024px) {
+    .html, .css {
+        overflow:scroll;
+     }
 
+     .start {
+         #items {
+             #step4{
+                 position: relative;
+                 top:5vh;
+
+             }
+
+             #step1 {
+                p{
+                    position: relative;
+                    width:70vh;
+                }
+             }
+         }
+     }
+
+     .comp{
+         #links{
+             position: relative;
+             left:4%;
+         }
+     }
+     
+     .herobar{
+         position: relative;
+         left:17vh;
+     }
+
+     .grid2{
+         width:100vh;
+         position: relative;
+         left: 5vh;
+     }
+
+
+     .navpage{
+         height: 140vh;
+     }
+     .nav {
+         width:90%;
+
+         .h1 {
+             position: relative;
+             bottom:15vh;
+         }
+     }
+     
+
+     
 }
 
 // MOBILE PORTRAIT /////////////////// 480 * 820  
@@ -3178,9 +3234,7 @@ input {
         height: 130vh;
     }
 
-    * {
-        outline: 2px solid red;
-    }
+  
 
     .navvy {
         background-color:$backgroundColor;
@@ -3195,6 +3249,7 @@ input {
             margin: 0px;
             position: relative;
             left:-4vh;
+            width:50%;
         }
     
     
@@ -3978,12 +4033,13 @@ input {
             text-align: center;
             position: relative;
             top: 20vh;
+            left:-6vh;
             }
     
             h1 {
                 position: relative;
                 top:20vh;
-                left:-4vh;
+                left:1vh;
                 width:70%;
             }
     
@@ -4094,6 +4150,11 @@ input {
             
         }
 
+        #exhed {
+            position: relative;
+            top:10vh;
+        }
+
         h1 {
             position: relative;
             left:6vh;
@@ -4129,7 +4190,7 @@ input {
         color:white;
         position: relative;
         right:75vh;
-        bottom: 10vh;
+        bottom: 7vh;
         left:-69vh;
        
         
@@ -4155,7 +4216,7 @@ input {
             border-color: transparent;
             border-radius: 10px;
             position: relative;
-            bottom:1vh;
+            bottom:2vh;
         }
     
         .save {
@@ -4167,7 +4228,7 @@ input {
             border-color: transparent;
             border-radius: 10px;
             position: relative;
-            bottom:1vh;
+            bottom:2vh;
         }
     
         
@@ -4215,7 +4276,7 @@ input {
             height: 4vh;
             position: relative;
             bottom:2vh;
-            top:6vh;
+            top:4vh;
             left:28vh;
             border-style: solid;
             border-color: transparent;
@@ -4264,7 +4325,7 @@ input {
     #codelabel {
         position: relative;
         left:8vh;
-        top:37vh;
+        top:57vh;
         width: 50vh;
         font-size: 28px;
     }
