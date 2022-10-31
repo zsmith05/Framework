@@ -6,7 +6,7 @@ $color: rgb(255, 255, 255);
 //     outline: 2px solid red;
 // }
 
-#home, #start {
+#home {
     width: 100%;
     height: 100vh;
 }
@@ -374,7 +374,7 @@ p {
         position: relative;
         left:20px;
         top:5px;
-
+        color:#398632
         }
     }
     .css {
@@ -390,7 +390,7 @@ p {
             position: relative;
             left:20px;
             top:5px;
-    
+            color:#398632
             }
        
     }
@@ -1868,6 +1868,227 @@ input {
     
 }
 
+// TABLET DESIGN Landscape ///////////////// 1024 * 768
+
+@media only screen and (max-width: 1024px) {
+    .html, .css {
+        overflow:scroll;
+     }
+
+     .start {
+         height: 130vh;
+         #items {
+             #step4{
+                 position: relative;
+                 top:5vh;
+                 left:1vh;
+                 p {
+                     width: 60vh;
+                 }
+
+             }
+
+             #step1 {
+                p{
+                    position: relative;
+                    width:70vh;
+                }
+             }
+         }
+     }
+
+     .comp{
+         height: 100vh;
+         #links{
+             position: relative;
+             left:90%;
+             top:5vh;
+         }
+     }
+     
+     .herobar{
+         position: relative;
+         left:30vh;
+         top:20vh;
+     }
+
+     .grid2{
+         width:100vh;
+         position: relative;
+         left: 5vh;
+     }
+
+
+     .navpage{
+         height: 140vh;
+     }
+     .nav {
+         width:90%;
+
+         .h1 {
+             position: relative;
+             bottom:15vh;
+         }
+     }
+     
+
+     .grid4 {
+        display: grid;
+        grid-gap:30px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows:repeat(2, 20vh);
+        // border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        left:-5vh;
+        
+    
+        
+    
+    
+        .html {
+            grid-row: span 2;
+            grid-column: span 1;
+            border-style: solid;
+            border-color: rgb(221, 221, 221);
+    
+            h1 {
+            color:$backgroundColor;
+            position: relative;
+            left:20px;
+            top:5px;
+            text-align: center;
+    
+            }
+        }
+        .css {
+           
+            grid-row: span 2;
+            grid-column: span 1;
+            border-style: solid;
+            border-color: rgb(221, 221, 221);
+    
+    
+            h1 {
+                text-align: center;
+                color:$backgroundColor;
+                position: relative;
+                left:-2vh;
+                top:1vh;
+            }
+    
+           
+        }
+    }
+
+    .cardpage{
+        height: 120vh;
+    }
+
+    .button-page{
+        height: 130vh ;
+
+        .buttons{
+            left:60vh;
+        }
+    }
+
+    .formpage {
+        height: 120vh;
+
+        .header{
+            left:50vh;
+        }
+
+        #para2{
+            left: 30vh;
+        }
+    }
+
+    .gridpage {
+        width: 100%;
+        height: 175vh;
+        background-color: rgb(255, 255, 255);
+        
+        .header {
+            position: relative;
+            left:25vh;
+        }
+
+        p{
+            position: relative;
+            left:8vh;
+        }
+
+        .grid-container{
+            left:10vh;
+        }
+
+        .grid7 {
+            display: grid;
+            width: 70%;
+            grid-gap:30px;
+            grid-template-columns: repeat(2, 50vh);
+            grid-template-rows:repeat(3, 20vh);
+            // border-radius: 20px;
+            // overflow: hidden;
+            position: relative;
+            top:25vh;
+            left:-2vh;
+            width: 70vh;
+            
+            // left: 20vh;
+            .html {
+                grid-row: span 3;
+                grid-column: span 1;
+                border-style: solid;
+                border-width: .7px;
+                border-color:#aaaaaa;
+                // background-color:#39863275;
+        
+                h1 {
+                color:$backgroundColor;
+                position: relative;
+                left:20px;
+                top:5px;
+                text-align: center;
+        
+                }
+            }
+            .css {
+                grid-row: span 3;
+                grid-column: span 1;
+                border-style: solid;
+                border-color:#868686;
+                border-width: .7px;
+                // background-color:#39863275;
+                position: relative;
+                // top: -72vh;
+                // left: 95vh;
+        
+                h1 {
+                    text-align: center;
+                    color:$backgroundColor;
+                }
+        
+               
+            }
+        }
+    }
+
+    .modal2 {
+        #modbtns{
+            top:4vh;
+        }
+    }
+
+    .modal{
+        .btn{
+            position: relative;
+            top:3vh;
+        }
+    }
+}
 
 
 // TABLET DESIGN /////////////////////// 768 * 1024
@@ -2016,6 +2237,7 @@ input {
                     position: relative;
                     left:10px;
                     top:8vh;
+                    font-size: 30px;
                     // text-align: center;
         
                     }
@@ -2120,7 +2342,7 @@ input {
         
             #links {
                 position: relative;
-                left:-10%;
+                left:3%;
                 top:30vh;
                 width: 30vh;
                 margin: 0px;
@@ -2259,6 +2481,7 @@ input {
             top:600px;
             width:60vh;
             height: 50vh;
+            left:-1vh;
         
             .html {
                 // background-color:rgba(163, 163, 163, 0.589);
@@ -2435,18 +2658,19 @@ input {
         .herobar {
             position: relative;
             justify-content: center;
-            top:200px;
-            left:13vh;
+            top:15vh;
+            left:9vh;
             width: 70%;
-            height: 150px;
+            height: 20vh;
         
             .grid {
                 display: grid;
-                grid-template-columns: repeat(2, 30vh);
-                grid-template-rows:repeat(2, 20vh);
+                grid-template-columns: repeat(2, 35vh);
+                grid-template-rows:repeat(2, 40vh);
                 border-radius: 20px;
                 overflow: hidden;
-                height:20vh;
+                height:40vh;
+                width: 60vh;
         
                 .sec1 {
                     background-color:$backgroundColor;
@@ -3092,7 +3316,7 @@ input {
         
         .gridcode {
             position: relative;
-            left:15vh;
+            left:10vh;
             top:20vh;
         }
 
@@ -3100,7 +3324,7 @@ input {
             display: grid;
             width: 100%;
             grid-gap:30px;
-            grid-template-columns: repeat(1, 50vh);
+            grid-template-columns: repeat(1, 60vh);
             grid-template-rows:repeat(4, 20vh);
            
             
@@ -3124,7 +3348,7 @@ input {
                 border-style: solid;
                 border-width: .7px;
                 border-color:#aaaaaa;
-                width:50vh;
+                width:60vh;
                 // background-color:#39863275;
         
               
@@ -3165,66 +3389,7 @@ input {
         
 
 }
-    
 
-// TABLET DESIGN Landscape ///////////////// 1024 * 768
-
-@media only screen and (max-width: 1024px) {
-    .html, .css {
-        overflow:scroll;
-     }
-
-     .start {
-         #items {
-             #step4{
-                 position: relative;
-                 top:5vh;
-
-             }
-
-             #step1 {
-                p{
-                    position: relative;
-                    width:70vh;
-                }
-             }
-         }
-     }
-
-     .comp{
-         #links{
-             position: relative;
-             left:4%;
-         }
-     }
-     
-     .herobar{
-         position: relative;
-         left:17vh;
-     }
-
-     .grid2{
-         width:100vh;
-         position: relative;
-         left: 5vh;
-     }
-
-
-     .navpage{
-         height: 140vh;
-     }
-     .nav {
-         width:90%;
-
-         .h1 {
-             position: relative;
-             bottom:15vh;
-         }
-     }
-     
-
-     
-}
 
 // MOBILE PORTRAIT /////////////////// 480 * 820  
 

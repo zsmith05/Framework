@@ -1,4 +1,4 @@
-#home, #start {
+#home {
   width: 100%;
   height: 100vh;
 }
@@ -343,6 +343,7 @@ p {
   position: relative;
   left: 20px;
   top: 5px;
+  color: #398632;
 }
 
 .grid2 .css {
@@ -357,6 +358,7 @@ p {
   position: relative;
   left: 20px;
   top: 5px;
+  color: #398632;
 }
 
 .navpage {
@@ -1619,6 +1621,174 @@ input {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .html, .css {
+    overflow: scroll;
+  }
+  .start {
+    height: 130vh;
+  }
+  .start #items #step4 {
+    position: relative;
+    top: 5vh;
+    left: 1vh;
+  }
+  .start #items #step4 p {
+    width: 60vh;
+  }
+  .start #items #step1 p {
+    position: relative;
+    width: 70vh;
+  }
+  .comp {
+    height: 100vh;
+  }
+  .comp #links {
+    position: relative;
+    left: 90%;
+    top: 5vh;
+  }
+  .herobar {
+    position: relative;
+    left: 30vh;
+    top: 20vh;
+  }
+  .grid2 {
+    width: 100vh;
+    position: relative;
+    left: 5vh;
+  }
+  .navpage {
+    height: 140vh;
+  }
+  .nav {
+    width: 90%;
+  }
+  .nav .h1 {
+    position: relative;
+    bottom: 15vh;
+  }
+  .grid4 {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (20vh)[2];
+        grid-template-rows: repeat(2, 20vh);
+    overflow: hidden;
+    position: relative;
+    left: -5vh;
+  }
+  .grid4 .html {
+    grid-row: span 2;
+    grid-column: span 1;
+    border-style: solid;
+    border-color: #dddddd;
+  }
+  .grid4 .html h1 {
+    color: #398632;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    text-align: center;
+  }
+  .grid4 .css {
+    grid-row: span 2;
+    grid-column: span 1;
+    border-style: solid;
+    border-color: #dddddd;
+  }
+  .grid4 .css h1 {
+    text-align: center;
+    color: #398632;
+    position: relative;
+    left: -2vh;
+    top: 1vh;
+  }
+  .cardpage {
+    height: 120vh;
+  }
+  .button-page {
+    height: 130vh;
+  }
+  .button-page .buttons {
+    left: 60vh;
+  }
+  .formpage {
+    height: 120vh;
+  }
+  .formpage .header {
+    left: 50vh;
+  }
+  .formpage #para2 {
+    left: 30vh;
+  }
+  .gridpage {
+    width: 100%;
+    height: 175vh;
+    background-color: white;
+  }
+  .gridpage .header {
+    position: relative;
+    left: 25vh;
+  }
+  .gridpage p {
+    position: relative;
+    left: 8vh;
+  }
+  .gridpage .grid-container {
+    left: 10vh;
+  }
+  .gridpage .grid7 {
+    display: -ms-grid;
+    display: grid;
+    width: 70%;
+    grid-gap: 30px;
+    -ms-grid-columns: (50vh)[2];
+        grid-template-columns: repeat(2, 50vh);
+    -ms-grid-rows: (20vh)[3];
+        grid-template-rows: repeat(3, 20vh);
+    position: relative;
+    top: 25vh;
+    left: -2vh;
+    width: 70vh;
+  }
+  .gridpage .grid7 .html {
+    grid-row: span 3;
+    grid-column: span 1;
+    border-style: solid;
+    border-width: .7px;
+    border-color: #aaaaaa;
+  }
+  .gridpage .grid7 .html h1 {
+    color: #398632;
+    position: relative;
+    left: 20px;
+    top: 5px;
+    text-align: center;
+  }
+  .gridpage .grid7 .css {
+    grid-row: span 3;
+    grid-column: span 1;
+    border-style: solid;
+    border-color: #868686;
+    border-width: .7px;
+    position: relative;
+  }
+  .gridpage .grid7 .css h1 {
+    text-align: center;
+    color: #398632;
+  }
+  .modal2 #modbtns {
+    top: 4vh;
+  }
+  .modal .btn {
+    position: relative;
+    top: 3vh;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .html, .css {
     overflow: scroll;
@@ -1738,6 +1908,7 @@ input {
     position: relative;
     left: 10px;
     top: 8vh;
+    font-size: 30px;
   }
   .main-herobar .grid .main-sec1 p {
     padding: 10px;
@@ -1816,7 +1987,7 @@ input {
   }
   .comp #links {
     position: relative;
-    left: -10%;
+    left: 3%;
     top: 30vh;
     width: 30vh;
     margin: 0px;
@@ -1928,6 +2099,7 @@ input {
     top: 600px;
     width: 60vh;
     height: 50vh;
+    left: -1vh;
   }
   .grid2 .html {
     grid-row: span 4;
@@ -2069,21 +2241,22 @@ input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    top: 200px;
-    left: 13vh;
+    top: 15vh;
+    left: 9vh;
     width: 70%;
-    height: 150px;
+    height: 20vh;
   }
   .herobar .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (30vh)[2];
-        grid-template-columns: repeat(2, 30vh);
-    -ms-grid-rows: (20vh)[2];
-        grid-template-rows: repeat(2, 20vh);
+    -ms-grid-columns: (35vh)[2];
+        grid-template-columns: repeat(2, 35vh);
+    -ms-grid-rows: (40vh)[2];
+        grid-template-rows: repeat(2, 40vh);
     border-radius: 20px;
     overflow: hidden;
-    height: 20vh;
+    height: 40vh;
+    width: 60vh;
   }
   .herobar .grid .sec1 {
     background-color: #398632;
@@ -2608,7 +2781,7 @@ input {
   }
   .gridcode {
     position: relative;
-    left: 15vh;
+    left: 10vh;
     top: 20vh;
   }
   .grid8 {
@@ -2616,8 +2789,8 @@ input {
     display: grid;
     width: 100%;
     grid-gap: 30px;
-    -ms-grid-columns: (50vh)[1];
-        grid-template-columns: repeat(1, 50vh);
+    -ms-grid-columns: (60vh)[1];
+        grid-template-columns: repeat(1, 60vh);
     -ms-grid-rows: (20vh)[4];
         grid-template-rows: repeat(4, 20vh);
   }
@@ -2635,7 +2808,7 @@ input {
     border-style: solid;
     border-width: .7px;
     border-color: #aaaaaa;
-    width: 50vh;
+    width: 60vh;
   }
   .grid8 .css {
     grid-row: span 2;
@@ -2658,43 +2831,6 @@ input {
     border-style: solid;
     border-width: .7px;
     border-color: #aaaaaa;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .html, .css {
-    overflow: scroll;
-  }
-  .start #items #step4 {
-    position: relative;
-    top: 5vh;
-  }
-  .start #items #step1 p {
-    position: relative;
-    width: 70vh;
-  }
-  .comp #links {
-    position: relative;
-    left: 4%;
-  }
-  .herobar {
-    position: relative;
-    left: 17vh;
-  }
-  .grid2 {
-    width: 100vh;
-    position: relative;
-    left: 5vh;
-  }
-  .navpage {
-    height: 140vh;
-  }
-  .nav {
-    width: 90%;
-  }
-  .nav .h1 {
-    position: relative;
-    bottom: 15vh;
   }
 }
 
